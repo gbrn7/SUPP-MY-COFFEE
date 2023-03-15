@@ -97,7 +97,7 @@ $dot-color: rgba(0, 0, 0, 0.466);
 
 .howitworks{
     margin-top: 20px;
-    background: url('../img/Hit-img.jpg');
+    background: url('../../img/Hit-img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -204,7 +204,7 @@ $dot-color: rgba(0, 0, 0, 0.466);
     margin-top: -100px;
     .banner-wrapper{
         .banner-wrap{
-            background: url('../img/banner-bg.png');
+            background: url('../../img/banner-bg.png');
             background-repeat: no-repeat;
             background-size: cover;
             padding-top: 50px;
@@ -315,7 +315,7 @@ $dot-color: rgba(0, 0, 0, 0.466);
 }
 
 .contact{
-    background: url('../img/contactbg.jpg');
+    background: url('../../img/contactbg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -341,6 +341,10 @@ $dot-color: rgba(0, 0, 0, 0.466);
                     padding: 9px 24px;
                     border-radius: 16px;
                 }
+                .name{
+                    position: relative;
+                    z-index: 2;
+                }
                 textarea{
                     border: none;
                     padding: 9px 24px;
@@ -365,6 +369,7 @@ $dot-color: rgba(0, 0, 0, 0.466);
     }
     .wave-3{
         position: absolute;
+        z-index: 1;
         top: -10px;
         right: 0;
         left: 0;

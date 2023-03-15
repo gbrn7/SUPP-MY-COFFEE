@@ -86,7 +86,7 @@ body::-webkit-scrollbar {
 
 .howitworks {
   margin-top: 20px;
-  background: url("../img/Hit-img.jpg");
+  background: url("../../img/Hit-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -183,7 +183,7 @@ body::-webkit-scrollbar {
   margin-top: -100px;
 }
 .banner .banner-wrapper .banner-wrap {
-  background: url("../img/banner-bg.png");
+  background: url("../../img/banner-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 50px;
@@ -287,7 +287,7 @@ body::-webkit-scrollbar {
 }
 
 .contact {
-  background: url("../img/contactbg.jpg");
+  background: url("../../img/contactbg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -307,6 +307,10 @@ body::-webkit-scrollbar {
   border: none;
   padding: 9px 24px;
   border-radius: 16px;
+}
+.contact .contact-wrapper .row-2 .input-wrap .name {
+  position: relative;
+  z-index: 2;
 }
 .contact .contact-wrapper .row-2 .input-wrap textarea {
   border: none;
@@ -329,6 +333,7 @@ body::-webkit-scrollbar {
 }
 .contact .wave-3 {
   position: absolute;
+  z-index: 1;
   top: -10px;
   right: 0;
   left: 0;
