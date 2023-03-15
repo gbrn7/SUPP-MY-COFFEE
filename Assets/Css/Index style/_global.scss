@@ -29,6 +29,8 @@ $dot-color: rgba(0, 0, 0, 0.466);
                     font-weight: map-get($fonts_weights, light);
                     color: $black_color;
                     font-size: 17px;
+                    letter-spacing: -0.02em;
+                    text-transform: capitalize;
                 }
             }
             .nav-link-active::before {

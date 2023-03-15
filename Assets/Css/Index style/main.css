@@ -27,6 +27,8 @@ body::-webkit-scrollbar {
   font-weight: 300;
   color: rgb(42, 42, 42);
   font-size: 17px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
 }
 .navbar .container .toggle .nav-link-active::before {
   content: "";

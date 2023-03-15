@@ -13,4 +13,46 @@ body::-webkit-scrollbar {
 .navbar .container .logo {
   border-radius: 10px;
   max-width: 86px;
+}
+.navbar .container .toggle .ddn i {
+  font-size: 22px;
+}
+.navbar .container .toggle .nav-item {
+  position: relative;
+}
+.navbar .container .toggle .nav-item .nav-link {
+  font-weight: 300;
+  color: rgb(42, 42, 42);
+  font-size: 15px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+}
+.navbar .container .toggle .right-content .input-group .search {
+  background-color: #EDEDED;
+  border-radius: 17px 0px 0px 17px;
+  border: none;
+  padding: 6px 0 6px 18px;
+  font-size: 13px;
+}
+.navbar .container .toggle .right-content .input-group button {
+  border-radius: 17px;
+}
+.navbar .container .toggle .right-content .input-group button i {
+  background-color: #EDEDED;
+  display: inline-block;
+  font-size: 15px;
+  padding: 8px 18px;
+  border-radius: 17px;
+}
+.navbar .container .toggle .right-content .input-group .search:focus {
+  outline: none;
+}
+.navbar .container .toggle .right-content .account i {
+  font-size: 16px;
+}
+.navbar .container .toggle .right-content .cart .crt {
+  font-size: 22px;
+}
+.navbar .container .toggle .right-content .cart .cvn {
+  font-size: 22px;
 }/*# sourceMappingURL=main.css.map */

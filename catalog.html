@@ -32,31 +32,50 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-light  mt-lg-3">
-      <div class="container py-1">
+      <div class="container py-1 d-lg-flex align-items-lg-center">
           <img src="Assets/img/Logo.png" class="logo" />
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-          <div class="collapse mt-3 navbar-collapse justify-content-center toggle" id="navbarNav">
-              <ul class="navbar-nav text-center text-lg-start mt-4 mb-4 mb-lg-0 mt-lg-0 d-flex align-items-center">
-                  <li class="nav-item mt-3 mt-lg-0">
-                      <a class="nav-link nav-link-1 nav-link-active" href="#home">Home</a
-            >
-          </li>
-          <li class="nav-item mt-3 mt-lg-0">
-            <a class="nav-link nav-link-2" href="#Howitworks">How It Works</a>
-                  </li>
-                  <li class="nav-item mt-3 mt-lg-0">
-                      <a class="nav-link nav-link-3" href="#BestProduct">Best Product</a
-            >
-          </li>
-          <li class="nav-item mt-3 mt-lg-0">
-            <a class="nav-link nav-link-4" href="#Contact">Contact</a>
-                  </li>
-                  <li class="nav-item mt-3 d-lg-none mt-lg-0">
-                      <div class="btn btn-login">Login</div>
-                  </li>
+          <div class="collapse mt-3 mt-lg-0 navbar-collapse justify-content-between align-items-center toggle" id="navbarNav">
+            <div class="left-content ms-lg-3 d-flex justify-content-start">
+              <ul class="navbar-nav gap-3 text-lg-start mt-4 mb-4 mb-lg-0 mt-lg-0 d-flex align-items-start align-items-lg-center">
+                <li class="nav-item mt-3 mt-lg-0">
+                  <button href="#" class="nav-link p-0 bg-transparent border-0">
+                    <div class="ddn d-flex align-items-center gap-1">
+                      <p class="ddn-text m-0">Categories</p>
+                      <i class='bx bx-chevron-down'></i>
+                    </div>
+                  </button>
+                </li>
+                <li class="nav-item mt-3 mt-lg-0">
+                  <a href="#recomendation" class="nav-link p-0">Recomendation</a>
+                </li>
+                <li class="nav-item mt-3 mt-lg-0">
+                  <a href="#whatsnew" class="nav-link p-0">What's New</a>
+                </li>
+
               </ul>
+            </div>
+            <div class="right-content d-flex flex-column flex-md-row  gap-3 align-items-md-center ">
+              <form action="#" method="get">
+                <div class="input-group d-flex align-items-center">
+                  <input type="text" name="Search" class="search form " id="">
+                  <button class="border-0" type="submit"><i class='bx bx-search' ></i></button>
+                </div>
+              </form>
+              <a href="#" class="text-decoration-none text-black account d-flex align-items-center gap-2">
+                <i class='bx bxs-user'></i>
+                <p class="m-0">Account</p>
+              </a>
+              <button class="m-0 p-0 border-0 text-decoration-none bg-transparent">
+                <div class="cart d-flex align-items-center gap-2">
+                  <i class='bx bx-cart crt' ></i>
+                  <p class="m-0">Cart</p>
+                  <i class='bx bx-chevron-down cvn' ></i>
+                </div>
+              </button>
+            </div>
           </div>
         </div>
     </nav>

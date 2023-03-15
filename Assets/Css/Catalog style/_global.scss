@@ -19,39 +19,62 @@ $dot-color: rgba(0, 0, 0, 0.466);
             border-radius: 10px;
             max-width: 86px;
         }
-        // .toggle {
-        //     @include media-breakpoint-down(lg) {
-        //         background-color: whitesmoke;
-        //         border-radius: 10px;
-        //     }
-        //     .nav-item {
-        //         position: relative;
-        //         .nav-link {
-        //             font-weight: map-get($fonts_weights, light);
-        //             color: $black_color;
-        //             font-size: 17px;
-        //         }
-        //     }
-        //     .nav-link-active::before {
-        //         content: "";
-        //         color: black;
-        //         width: 100%;
-        //         text-align: center;
-        //         position: absolute;
-        //         bottom: 0;
-        //         left: 0;
-        //         right: 0;
-        //         height: 5%;
-        //         background-color: black;
-        //     }
-        //     .btn-login {
-        //         font-weight: map-get($fonts_weights, semiBold);
-        //         font-size: 20px;
-        //         color: white;
-        //         padding: 3px 29px;
-        //         background-color: #58311C;
-        //         border: none;
-        //     }
-        // }
+        .toggle {
+            .ddn{
+
+                i{
+                    font-size: 22px;
+                }
+            }
+
+            .nav-item {
+                position: relative;
+                .nav-link {
+                    font-weight: map-get($fonts_weights, light);
+                    color: $black_color;
+                    font-size: 15px;
+                    letter-spacing: -0.02em;
+                    text-transform: capitalize;
+                }
+            }
+
+            .right-content{
+                .input-group{
+                    .search{
+                        background-color: #EDEDED;
+                        border-radius: 17px 0px 0px 17px;
+                        border: none;
+                        padding: 6px 0 6px 18px;
+                        font-size: 13px;
+                    }
+                    button{
+                        border-radius: 17px;
+                        i{
+                            background-color: #EDEDED;
+                            display: inline-block;
+                            font-size: 15px;
+                            padding: 8px 18px;
+                            border-radius: 17px;
+                        }
+                    }
+                    .search:focus{
+                        outline: none;
+                    }
+                }
+                .account{
+                    i{
+                        font-size: 16px;
+                    }
+                }
+                .cart{
+                    .crt{
+                        font-size: 22px;
+                    }
+                    .cvn{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
     }
 }
