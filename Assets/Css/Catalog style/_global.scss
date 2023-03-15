@@ -1,0 +1,14 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    transition: .5s all ease;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+// Colors
+$bg-color: rgb(255, 255, 255);
+$dot-color: rgba(0, 0, 0, 0.466);

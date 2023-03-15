@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;300;400;500;600;700;900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s all ease;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
