@@ -54,10 +54,9 @@
                 <li class="nav-item mt-3 mt-lg-0">
                   <a href="#whatsnew" class="nav-link p-0">What's New</a>
                 </li>
-
               </ul>
             </div>
-            <div class="right-content d-flex flex-column flex-md-row  gap-3 align-items-md-center ">
+            <div class="right-content d-flex flex-column flex-lg-row  gap-3  ">
               <form action="#" method="get">
                 <div class="input-group d-flex align-items-center">
                   <input type="text" name="Search" class="search form " id="">
@@ -68,14 +67,26 @@
                 <i class='bx bxs-user'></i>
                 <p class="m-0">Account</p>
               </a>
-              <button class="m-0 p-0 border-0 text-decoration-none bg-transparent">
-                <div class="cart d-flex align-items-center gap-2">
-                  <i class='bx bx-cart crt' ></i>
-                  <p class="m-0">Cart</p>
-                  <i class='bx bx-chevron-down cvn' ></i>
+              <div class="btn-group cart-wrapper ">
+                <div type="button" class=" dropdown-toggle d-flex align-items-center gap-2 cart-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class='bx bx-cart crt cart-icon' ></i>
+                  <p class="m-0 title">Cart</p>
                 </div>
-              </button>
-            </div>
+                <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu">
+                  <li class="dropdown-item">
+                    <input type="hidden" name="id" value="01">
+                    <div class="title m-0 row align-items-center">
+                      <div class="col-8 title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
+                      <div class="col-3 qty-btn d-flex gap-2 justify-content-center align-items-center">
+                        <div class="plus" class="col-4">+</div>
+                        <input type="text"  class="col-4">
+                        <div class="minus"  class="col-4">-</div>
+                      </div>
+                      <div class="col-1"><i class='bx bx-trash'></i></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
           </div>
         </div>
     </nav>

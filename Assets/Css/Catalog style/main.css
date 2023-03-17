@@ -37,6 +37,9 @@ body::-webkit-scrollbar {
     font-size: 13px;
   }
 }
+.navbar .container .toggle .right-content {
+  box-sizing: border-box;
+}
 .navbar .container .toggle .right-content .input-group .search {
   background-color: #EDEDED;
   border-radius: 17px 0px 0px 17px;
@@ -57,37 +60,55 @@ body::-webkit-scrollbar {
 .navbar .container .toggle .right-content .input-group .search:focus {
   outline: none;
 }
+.navbar .container .toggle .right-content .account p {
+  font-size: 16px;
+}
 @media (max-width: 575.98px) {
   .navbar .container .toggle .right-content .account p {
     font-size: 13px;
   }
 }
 .navbar .container .toggle .right-content .account i {
-  font-size: 16px;
+  font-size: 18px;
 }
 @media (max-width: 575.98px) {
   .navbar .container .toggle .right-content .account i {
     font-size: 13px;
   }
 }
-.navbar .container .toggle .right-content .cart p {
-  font-size: 13px;
-}
-.navbar .container .toggle .right-content .cart .crt {
-  font-size: 22px;
+.navbar .container .toggle .right-content .cart-wrapper .title {
+  font-size: 16px;
 }
 @media (max-width: 575.98px) {
-  .navbar .container .toggle .right-content .cart .crt {
+  .navbar .container .toggle .right-content .cart-wrapper .title {
     font-size: 13px;
   }
 }
-.navbar .container .toggle .right-content .cart .cvn {
-  font-size: 22px;
+.navbar .container .toggle .right-content .cart-wrapper .cart-icon {
+  font-size: 18px;
 }
 @media (max-width: 575.98px) {
-  .navbar .container .toggle .right-content .cart .cvn {
+  .navbar .container .toggle .right-content .cart-wrapper .cart-icon {
     font-size: 13px;
   }
+}
+.navbar .container .toggle .right-content .cart-wrapper .dropdown-menu {
+  width: 600%;
+}
+@media (max-width: 991.98px) {
+  .navbar .container .toggle .right-content .cart-wrapper .dropdown-menu {
+    width: 100%;
+  }
+}
+.navbar .container .toggle .right-content .cart-wrapper .dropdown-menu .dropdown-item {
+  margin: 0;
+  white-space: normal;
+}
+.navbar .container .toggle .right-content .cart-wrapper .dropdown-menu .dropdown-item .title {
+  font-size: 12px;
+}
+.navbar .container .toggle .right-content .cart-wrapper .dropdown-menu .dropdown-item:hover {
+  background-color: transparent;
 }
 
 .recomendation .recomendation-wrapper .row-1 .title {
