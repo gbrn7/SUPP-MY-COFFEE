@@ -45,3 +45,5 @@ a.forEach((e) => {
         e.classList.add("nav-link-active");
     })
 });
+
+AOS.init();

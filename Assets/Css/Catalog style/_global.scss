@@ -44,6 +44,87 @@ $dot-color: rgba(0, 0, 0, 0.466);
                 }
             }
 
+            .left-content{
+                .dropdown{
+                    cursor: pointer;
+                    .select{
+                        align-items: center;
+                        transition: background 0.3s;
+
+                        i{
+                            font-size: 18px;
+                            @include media-breakpoint-down(sm){
+                                font-size: 13px;
+                            }
+                        }
+                        span{
+                            font-size: 16px;
+                            @include media-breakpoint-down(sm){
+                                font-size: 13px;
+                            }
+                        }
+                    }
+
+                    .caret{
+                        width: 0;
+                        height: 0;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                        border-top: 6px solid black;
+                        transition: 0.3s;
+                    }
+
+                    .caret-rotate{
+                        transform: rotate(180deg);
+                    }
+
+                    .menu{
+                        list-style: none;
+                        padding: 0.2em 0.5em;
+                        background: whitesmoke;
+                        border-radius: 0.5em;
+                        color: black;
+                        position: absolute;
+                        top: 3em;
+                        left: 0;
+                        opacity: 0;
+                        display: none;
+                        transition: 0.2s;
+                        z-index: 1;
+                        cursor: auto;
+
+                        @include media-breakpoint-down(lg){
+                            width: 450%;
+                        }
+                        .title{
+                            font-size: 15px;
+                            @include media-breakpoint-down(md){
+                                font-size: 13px;
+                            }
+                        }
+
+
+                        li{
+                            padding: 0.7em 0.5em;
+                            margin: 0.3em 0;
+                            border-radius: 0.5em;
+
+                        }
+
+                        li:hover{
+                            background-color: white;
+                        }
+                    }
+                    
+                    .menu-open{
+                        display: block;
+                        opacity: 1;
+                    }
+
+
+                }
+            }
+
             .right-content{
                 .input-group{
                     .search{
@@ -52,6 +133,8 @@ $dot-color: rgba(0, 0, 0, 0.466);
                         border: none;
                         padding: 6px 0 6px 18px;
                         font-size: 13px;
+                        position: relative;
+                        z-index: 3;
                     }
                     button{
                         border-radius: 17px;
@@ -59,12 +142,12 @@ $dot-color: rgba(0, 0, 0, 0.466);
                             background-color: #EDEDED;
                             display: inline-block;
                             font-size: 15px;
-                            padding: 8px 18px;
+                            padding: 7.26px 18px;
                             border-radius: 17px;
                         }
                     }
                     .search:focus{
-                        outline: none;
+                        outline: invert;
                     }
                 }
                 .account{
@@ -82,39 +165,150 @@ $dot-color: rgba(0, 0, 0, 0.466);
                     }
                 }
                 box-sizing: border-box;
-                .cart-wrapper{
-                    .title{
-                        font-size: 16px;
-                        @include media-breakpoint-down(sm){
-                            font-size: 13px;
+                .dropdown{
+                    cursor: pointer;
+                    .select{
+                        display: flex;
+                        gap: 12px;
+                        align-items: center;
+                        transition: background 0.3s;
+
+                        i{
+                            font-size: 18px;
+                            @include media-breakpoint-down(sm){
+                                font-size: 13px;
+                            }
+                        }
+                        span{
+                            font-size: 16px;
+                            @include media-breakpoint-down(sm){
+                                font-size: 13px;
+                            }
                         }
                     }
-                    .cart-icon{
-                        font-size: 18px;
-                        @include media-breakpoint-down(sm){
-                            font-size: 13px;
-                        }
+
+                    .caret{
+                        width: 0;
+                        height: 0;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                        border-top: 6px solid black;
+                        transition: 0.3s;
                     }
-                    .dropdown-menu{
-                        width: calc(100% * 6);
+
+                    .caret-rotate{
+                        transform: rotate(180deg);
+                    }
+
+                    .menu{
+                        list-style: none;
+                        padding: 0.2em 0.5em;
+                        background: whitesmoke;
+                        border-radius: 0.5em;
+                        color: black;
+                        position: absolute;
+                        top: 3em;
+                        right: 0;
                         @include media-breakpoint-down(lg){
-                            width: 100%;
+                            left: 0;
+                            right: auto;
                         }
-                        .dropdown-item{
-                            margin: 0;
-                            white-space: normal;
-                            .title{
-                                font-size: 12px;
+                        opacity: 0;
+                        display: none;
+                        transition: 0.2s;
+                        z-index: 1;
+                        width: 700%;
+                        cursor: auto;
+
+                        @include media-breakpoint-down(lg){
+                            width: 450%;
+                        }
+                        .title{
+                            font-size: 15px;
+                            @include media-breakpoint-down(md){
+                                font-size: 13px;
+                            }
+                        }
+
+
+                        li{
+                            padding: 0.7em 0.5em;
+                            margin: 0.3em 0;
+                            border-radius: 0.5em;
+
+                            .delete-wrap{
+                                .bx-trash:hover{
+                                    cursor: pointer;
+                                    color: red;
+                                }
+                                .bx-trash{
+                                    font-size: 18px;
+                                    @include media-breakpoint-down(md){
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+
+
+
+                            .plus{
+                                cursor: pointer;
+                                font-size: 20px;
+                                @include media-breakpoint-down(md){
+                                    font-size: 15px;
+                                }
+                            }
+
+                            .qty-input{
+                                text-align: center;
+                            }
+
+                            .minus{
+                                cursor: pointer;
+                                font-size: 20px;
+                                @include media-breakpoint-down(md){
+                                    font-size: 15px;
+                                }
+                            }
+
+                            button{
+                                    border: 1px solid black;
+                                    background-color: white;
+                                    border-radius: 7px;
+                                    font-size: 15px;
+                                    @include media-breakpoint-down(md){
+                                        font-size: 13px;
+                                    }
+                                    color: black;
+                            }
+                            button:hover{
+                                background-color: black;
+                                color: white;
                             }
 
                         }
-                        .dropdown-item:hover{
-                            background-color: transparent;
+
+                        li:hover{
+                            background-color: white;
                         }
                     }
+                    
+                    .menu-open{
+                        display: block;
+                        opacity: 1;
+                    }
+
+
                 }
             }
         }
+    }
+}
+
+.banner{
+    margin-top: 85px;
+    .swiper-scrollbar-drag{
+        background-color: whitesmoke;
     }
 }
 
@@ -143,7 +337,7 @@ $dot-color: rgba(0, 0, 0, 0.466);
                     .product-desc{
                         color: black;
                         .title{
-                            font-size: 16px;
+                            font-size: 14px;
                             letter-spacing: -0.05em;
                             font-weight: map-get($fonts_weights, regular);
                             @include media-breakpoint-down(sm){
@@ -267,6 +461,33 @@ $dot-color: rgba(0, 0, 0, 0.466);
                             color: white;
                         }
                     }
+                }
+                .bx-chevron-right-circle{
+                    position: absolute;
+                    color: black;
+                    z-index: 10;
+                    top: 50%;
+                    font-size: 40px;
+                    @include media-breakpoint-down(md){
+                    font-size: 30px;
+                            }
+                    left: auto;
+                    right: 10px;
+                }
+                .bx-chevron-left-circle{
+                    position: absolute;
+                    color: black;
+                    z-index: 10;
+                    top: 50%;
+                    font-size: 40px;
+                    @include media-breakpoint-down(md){
+                    font-size: 30px;
+                            }
+                    right: auto;
+                    left: 10px;
+                }
+                .swiper-pagination-bullet-active{
+                    background-color: black;
                 }
             }
         }

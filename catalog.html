@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="Assets/Vendor/aos-2/dist/aos.css" />
 
   <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="Assets/Css/Catalog style/main.css" />
@@ -31,7 +31,7 @@
 <body>
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-light  mt-lg-3">
+    <nav class="navbar fixed-top bg-white navbar-expand-lg navbar-light ">
       <div class="container py-1 d-lg-flex align-items-lg-center">
           <img src="Assets/img/Logo.png" class="logo" />
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,12 +41,17 @@
             <div class="left-content ms-lg-3 d-flex justify-content-start">
               <ul class="navbar-nav gap-3 text-lg-start mt-4 mb-4 mb-lg-0 mt-lg-0 d-flex align-items-start align-items-lg-center">
                 <li class="nav-item mt-3 mt-lg-0">
-                  <button href="#" class="nav-link p-0 bg-transparent border-0">
-                    <div class="ddn d-flex align-items-center gap-1">
-                      <p class="ddn-text m-0">Categories</p>
-                      <i class='bx bx-chevron-down'></i>
+                  <div href="#" class="nav-link dropdown ddn-ctg p-0 bg-transparent border-0">
+                    <div class="ddn  select d-flex align-items-center gap-2">
+                      <span class="selected">Categories</span>
+                      <div class="caret"></div>
                     </div>
-                  </button>
+                    <ul class="menu">
+                      <li><a href="#" class="text-decoration-none text-black title">Arabika</a></li>
+                      <li><a href="#" class="text-decoration-none text-black title">Robusta</a></li>
+                      <li><a href="#" class="text-decoration-none text-black title">Liberika</a></li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="nav-item mt-3 mt-lg-0">
                   <a href="#recomendation" class="nav-link p-0">Recomendation</a>
@@ -56,7 +61,7 @@
                 </li>
               </ul>
             </div>
-            <div class="right-content d-flex flex-column flex-lg-row  gap-3  ">
+            <div class="right-content align-items-start d-flex flex-column flex-lg-row  gap-3  ">
               <form action="#" method="get">
                 <div class="input-group d-flex align-items-center">
                   <input type="text" name="Search" class="search form " id="">
@@ -67,24 +72,57 @@
                 <i class='bx bxs-user'></i>
                 <p class="m-0">Account</p>
               </a>
-              <div class="btn-group cart-wrapper ">
-                <div type="button" class=" dropdown-toggle d-flex align-items-center gap-2 cart-btn" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="dropdown">
+                <div class="select">
                   <i class='bx bx-cart crt cart-icon' ></i>
-                  <p class="m-0 title">Cart</p>
+                  <span class="selected">Cart</span>
+                  <div class="caret"></div>
                 </div>
-                <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu">
-                  <li class="dropdown-item">
-                    <input type="hidden" name="id" value="01">
-                    <div class="title m-0 row align-items-center">
-                      <div class="col-8 title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
-                      <div class="col-3 qty-btn d-flex gap-2 justify-content-center align-items-center">
-                        <div class="plus" class="col-4">+</div>
-                        <input type="text"  class="col-4">
-                        <div class="minus"  class="col-4">-</div>
-                      </div>
-                      <div class="col-1"><i class='bx bx-trash'></i></div>
-                    </div>
+                <ul class="menu menu-cart">
+                  <form action="#">
+                  <div class="menu-wrap d-flex flex-column-reverse">
+                      <!-- <li>
+                        <input type="hidden" name="id" class="id" value="01">
+                        <div class="title m-0 row align-items-center">
+                          <div class="col-8 title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
+                          <div class="col-3 qty-btn d-flex gap-3 justify-content-center align-items-center">
+                            <div class="plus" class="col-4">+</div>
+                            <input type="text"  value="1"  class="col-4 qty-input">
+                            <div class="minus"  class="col-4">-</div>
+                          </div>
+                          <div class="col-1 delete-wrap text-center"><i class='bx bx-trash'></i></div>
+                        </div>
+                      </li>
+                      <li>
+                        <input type="hidden" name="id" class="id" value="01">
+                        <div class="title m-0 row align-items-center">
+                          <div class="col-8 title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
+                          <div class="col-3 qty-btn d-flex gap-3 justify-content-center align-items-center">
+                            <div class="plus" class="col-4">+</div>
+                            <input type="text"  value="1"  class="col-4 qty-input">
+                            <div class="minus"  class="col-4">-</div>
+                          </div>
+                          <div class="col-1 delete-wrap text-center"><i class='bx bx-trash'></i></div>
+                        </div>
+                      </li>
+                      <li>
+                        <input type="hidden" name="id" class="id" value="01">
+                        <div class="title m-0 row align-items-center">
+                          <div class="col-8 title">Kopi Robusta Gayo Monero Robusta Coffee 2500g - Biji Kopi</div>
+                          <div class="col-3 qty-btn d-flex gap-3 justify-content-center align-items-center">
+                            <div class="plus" class="col-4">+</div>
+                            <input type="text"  value="1"  class="col-4 qty-input">
+                            <div class="minus"  class="col-4">-</div>
+                          </div>
+                          <div class="col-1 delete-wrap text-center"><i class='bx bx-trash'></i></div>
+                        </div>
+                      </li> -->
+
+                  </div>
+                  <li class="btn-wrap row p-1">
+                    <button type="submit " class="p-1 mt-2 btn ">Checkout</button>
                   </li>
+                  </form>
                 </ul>
               </div>
           </div>
@@ -93,11 +131,28 @@
   <!-- Navbar End -->
 
   <!-- Banner Start -->
-  <section class="banner mt-4">
+  <section class="banner">
     <div class="container banner-wrapper">
       <div class="row justify-content-center">
-        <div class="col-12 text-center">
-          <img src="Assets/img/ctlg-banner-1.png" class="img-fluid">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="text-center">
+                <img src="Assets/img/ctlg-banner-1.png" class="img-fluid">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="text-center">
+                <img src="Assets/img/ctlg-banner-2.png" class="img-fluid">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="text-center">
+                <img src="Assets/img/ctlg-banner-3.png" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
         </div>
       </div>
     </div>
@@ -112,7 +167,7 @@
           <p class="title">Recomendation For You</p>
         </div>
       </div>
-      <div class="row row-2"> 
+      <div class="row row-2 gy-3"> 
         <div class="col-6 col-lg-3 product  p-2">
             <div class="box">
                 <a href="#" class="text-decoration-none">
@@ -120,6 +175,7 @@
                 </a>
                 <a href="" class="text-decoration-none">
                     <div class="product-desc px-3 py-3">
+                      <input type="hidden" value="7" class="id-product">
                         <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
                         <div class="footer d-flex justify-content-between pt-2">
                             <div class="price">Rp. 30.000</div>
@@ -141,7 +197,8 @@
                 </a>
                 <a href="" class="text-decoration-none">
                     <div class="product-desc px-3 py-3">
-                        <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
+                      <input type="hidden" value="8" class="id-product">
+                        <div class="title">Kopi Arabika Mandailing Monero Arabica Coffee 200gr - Biji Kopi</div>
                         <div class="footer d-flex justify-content-between pt-2">
                             <div class="price">Rp. 30.000</div>
                             <div class="trans d-flex align-items-end">702 Terjual</div>
@@ -162,7 +219,8 @@
                 </a>
                 <a href="" class="text-decoration-none">
                     <div class="product-desc px-3 py-3">
-                        <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
+                      <input type="hidden" value="9" class="id-product">
+                        <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Giling Halus</div>
                         <div class="footer d-flex justify-content-between pt-2">
                             <div class="price">Rp. 30.000</div>
                             <div class="trans d-flex align-items-end">702 Terjual</div>
@@ -183,7 +241,8 @@
                 </a>
                 <a href="" class="text-decoration-none">
                     <div class="product-desc px-3 py-3">
-                        <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
+                      <input type="hidden" value="10" class="id-product">
+                        <div class="title">Kopi Arabika Flores Monero Arabica Coffee 200gr - Biji kopi</div>
                         <div class="footer d-flex justify-content-between pt-2">
                             <div class="price">Rp. 30.000</div>
                             <div class="trans d-flex align-items-end">702 Terjual</div>
@@ -204,6 +263,7 @@
                 </a>
                 <a href="" class="text-decoration-none">
                     <div class="product-desc px-3 py-3">
+                      <input type="hidden" value="7" class="id-product">
                         <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
                         <div class="footer d-flex justify-content-between pt-2">
                             <div class="price">Rp. 30.000</div>
@@ -225,6 +285,7 @@
                 </a>
                 <a href="" class="text-decoration-none">
                     <div class="product-desc px-3 py-3">
+                      <input type="hidden" value="7" class="id-product">
                         <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
                         <div class="footer d-flex justify-content-between pt-2">
                             <div class="price">Rp. 30.000</div>
@@ -246,6 +307,7 @@
                 </a>
                 <a href="" class="text-decoration-none">
                     <div class="product-desc px-3 py-3">
+                      <input type="hidden" value="7" class="id-product">
                         <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
                         <div class="footer d-flex justify-content-between pt-2">
                             <div class="price">Rp. 30.000</div>
@@ -267,6 +329,7 @@
                 </a>
                 <a href="" class="text-decoration-none">
                     <div class="product-desc px-3 py-3">
+                      <input type="hidden" value="7" class="id-product">
                         <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
                         <div class="footer d-flex justify-content-between pt-2">
                             <div class="price">Rp. 30.000</div>
@@ -288,6 +351,7 @@
                 </a>
                 <a href="" class="text-decoration-none">
                     <div class="product-desc px-3 py-3">
+                      <input type="hidden" value="7" class="id-product">
                         <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
                         <div class="footer d-flex justify-content-between pt-2">
                             <div class="price">Rp. 30.000</div>
@@ -309,6 +373,7 @@
                 </a>
                 <a href="" class="text-decoration-none">
                     <div class="product-desc px-3 py-3">
+                      <input type="hidden" value="7" class="id-product">
                         <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
                         <div class="footer d-flex justify-content-between pt-2">
                             <div class="price">Rp. 30.000</div>
@@ -330,6 +395,7 @@
                 </a>
                 <a href="" class="text-decoration-none">
                     <div class="product-desc px-3 py-3">
+                      <input type="hidden" value="7" class="id-product">
                         <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
                         <div class="footer d-flex justify-content-between pt-2">
                             <div class="price">Rp. 30.000</div>
@@ -351,6 +417,7 @@
                 </a>
                 <a href="" class="text-decoration-none">
                     <div class="product-desc px-3 py-3">
+                      <input type="hidden" value="7" class="id-product">
                         <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
                         <div class="footer d-flex justify-content-between pt-2">
                             <div class="price">Rp. 30.000</div>
@@ -372,6 +439,7 @@
                 </a>
                 <a href="" class="text-decoration-none">
                     <div class="product-desc px-3 py-3">
+                      <input type="hidden" value="7" class="id-product">
                         <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
                         <div class="footer d-flex justify-content-between pt-2">
                             <div class="price">Rp. 30.000</div>
@@ -393,6 +461,7 @@
                 </a>
                 <a href="" class="text-decoration-none">
                     <div class="product-desc px-3 py-3">
+                      <input type="hidden" value="7" class="id-product">
                         <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
                         <div class="footer d-flex justify-content-between pt-2">
                             <div class="price">Rp. 30.000</div>
@@ -414,6 +483,7 @@
                 </a>
                 <a href="" class="text-decoration-none">
                     <div class="product-desc px-3 py-3">
+                      <input type="hidden" value="7" class="id-product">
                         <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
                         <div class="footer d-flex justify-content-between pt-2">
                             <div class="price">Rp. 30.000</div>
@@ -435,6 +505,7 @@
                 </a>
                 <a href="" class="text-decoration-none">
                     <div class="product-desc px-3 py-3">
+                      <input type="hidden" value="7" class="id-product">
                         <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
                         <div class="footer d-flex justify-content-between pt-2">
                             <div class="price">Rp. 30.000</div>
@@ -463,90 +534,181 @@
           <p class="title">What's New</p>
         </div>
       </div>
-      <div class="row row-2"> 
-        <div class="col-6 col-lg-3 product  p-2">
-            <div class="box">
-                <a href="#" class="text-decoration-none">
-                    <div class="product-img"><img src="Assets/img/p-1.jpg" class="img-fluid"></div>
-                </a>
-                <a href="" class="text-decoration-none">
-                    <div class="product-desc px-3 py-3">
-                        <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
-                        <div class="footer d-flex justify-content-between pt-2">
-                            <div class="price">Rp. 30.000</div>
-                            <div class="trans d-flex align-items-end">702 Terjual</div>
-                        </div>
-                      </div>
+      <div class="row row-2">
+        <div  class="swiper mySwiper-2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product p-2">
+                <div class="box">
+                    <a href="#" class="text-decoration-none">
+                        <div class="product-img"><img src="Assets/img/p-1.jpg" class="img-fluid"></div>
                     </a>
-                    <div class="btn-cart-wrapper px-3 pt-1 pb-3">
-                      <button class="btn-cart text-center">
-                        <p class="btn-text m-0">Add to cart</p>
-                      </button>
-                    </div>
-            </div>
-        </div>
-        <div class="col-6 col-lg-3 product  p-2">
-            <div class="box">
-                <a href="#" class="text-decoration-none">
-                    <div class="product-img"><img src="Assets/img/p-2.jpg" class="img-fluid"></div>
-                </a>
-                <a href="" class="text-decoration-none">
-                    <div class="product-desc px-3 py-3">
-                        <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
-                        <div class="footer d-flex justify-content-between pt-2">
-                            <div class="price">Rp. 30.000</div>
-                            <div class="trans d-flex align-items-end">702 Terjual</div>
+                    <a href="" class="text-decoration-none">
+                        <div class="product-desc px-3 py-3">
+                          <input type="hidden" value="7" class="id-product">
+                            <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
+                            <div class="footer d-flex justify-content-between pt-2">
+                                <div class="price">Rp. 30.000</div>
+                                <div class="trans d-flex align-items-end">702 Terjual</div>
+                            </div>
+                          </div>
+                        </a>
+                        <div class="btn-cart-wrapper px-3 pt-1 pb-3">
+                          <button class="btn-cart text-center">
+                            <p class="btn-text m-0">Add to cart</p>
+                          </button>
                         </div>
-                      </div>
-                    </a>
-                    <div class="btn-cart-wrapper px-3 pt-1 pb-3">
-                      <button class="btn-cart text-center">
-                        <p class="btn-text m-0">Add to cart</p>
-                      </button>
-                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-6 col-lg-3 product  p-2">
-            <div class="box">
-                <a href="#" class="text-decoration-none">
-                    <div class="product-img"><img src="Assets/img/p-3.jpg" class="img-fluid"></div>
-                </a>
-                <a href="" class="text-decoration-none">
-                    <div class="product-desc px-3 py-3">
-                        <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
-                        <div class="footer d-flex justify-content-between pt-2">
-                            <div class="price">Rp. 30.000</div>
-                            <div class="trans d-flex align-items-end">702 Terjual</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product p-2">
+                <div class="box">
+                    <a href="#" class="text-decoration-none">
+                        <div class="product-img"><img src="Assets/img/p-1.jpg" class="img-fluid"></div>
+                    </a>
+                    <a href="" class="text-decoration-none">
+                        <div class="product-desc px-3 py-3">
+                          <input type="hidden" value="7" class="id-product">
+                            <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
+                            <div class="footer d-flex justify-content-between pt-2">
+                                <div class="price">Rp. 30.000</div>
+                                <div class="trans d-flex align-items-end">702 Terjual</div>
+                            </div>
+                          </div>
+                        </a>
+                        <div class="btn-cart-wrapper px-3 pt-1 pb-3">
+                          <button class="btn-cart text-center">
+                            <p class="btn-text m-0">Add to cart</p>
+                          </button>
                         </div>
-                      </div>
-                    </a>
-                    <div class="btn-cart-wrapper px-3 pt-1 pb-3">
-                      <button class="btn-cart text-center">
-                        <p class="btn-text m-0">Add to cart</p>
-                      </button>
-                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-6 col-lg-3 product  p-2">
-            <div class="box">
-                <a href="#" class="text-decoration-none">
-                    <div class="product-img"><img src="Assets/img/p-3.jpg" class="img-fluid"></div>
-                </a>
-                <a href="" class="text-decoration-none">
-                    <div class="product-desc px-3 py-3">
-                        <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
-                        <div class="footer d-flex justify-content-between pt-2">
-                            <div class="price">Rp. 30.000</div>
-                            <div class="trans d-flex align-items-end">702 Terjual</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product p-2">
+                <div class="box">
+                    <a href="#" class="text-decoration-none">
+                        <div class="product-img"><img src="Assets/img/p-1.jpg" class="img-fluid"></div>
+                    </a>
+                    <a href="" class="text-decoration-none">
+                        <div class="product-desc px-3 py-3">
+                          <input type="hidden" value="7" class="id-product">
+                            <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
+                            <div class="footer d-flex justify-content-between pt-2">
+                                <div class="price">Rp. 30.000</div>
+                                <div class="trans d-flex align-items-end">702 Terjual</div>
+                            </div>
+                          </div>
+                        </a>
+                        <div class="btn-cart-wrapper px-3 pt-1 pb-3">
+                          <button class="btn-cart text-center">
+                            <p class="btn-text m-0">Add to cart</p>
+                          </button>
                         </div>
-                      </div>
-                    </a>
-                    <div class="btn-cart-wrapper px-3 pt-1 pb-3">
-                      <button class="btn-cart text-center">
-                        <p class="btn-text m-0">Add to cart</p>
-                      </button>
-                    </div>
+                </div>
             </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product p-2">
+                <div class="box">
+                    <a href="#" class="text-decoration-none">
+                        <div class="product-img"><img src="Assets/img/p-1.jpg" class="img-fluid"></div>
+                    </a>
+                    <a href="" class="text-decoration-none">
+                        <div class="product-desc px-3 py-3">
+                          <input type="hidden" value="7" class="id-product">
+                            <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
+                            <div class="footer d-flex justify-content-between pt-2">
+                                <div class="price">Rp. 30.000</div>
+                                <div class="trans d-flex align-items-end">702 Terjual</div>
+                            </div>
+                          </div>
+                        </a>
+                        <div class="btn-cart-wrapper px-3 pt-1 pb-3">
+                          <button class="btn-cart text-center">
+                            <p class="btn-text m-0">Add to cart</p>
+                          </button>
+                        </div>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product p-2">
+                <div class="box">
+                    <a href="#" class="text-decoration-none">
+                        <div class="product-img"><img src="Assets/img/p-1.jpg" class="img-fluid"></div>
+                    </a>
+                    <a href="" class="text-decoration-none">
+                        <div class="product-desc px-3 py-3">
+                          <input type="hidden" value="7" class="id-product">
+                            <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
+                            <div class="footer d-flex justify-content-between pt-2">
+                                <div class="price">Rp. 30.000</div>
+                                <div class="trans d-flex align-items-end">702 Terjual</div>
+                            </div>
+                          </div>
+                        </a>
+                        <div class="btn-cart-wrapper px-3 pt-1 pb-3">
+                          <button class="btn-cart text-center">
+                            <p class="btn-text m-0">Add to cart</p>
+                          </button>
+                        </div>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product p-2">
+                <div class="box">
+                    <a href="#" class="text-decoration-none">
+                        <div class="product-img"><img src="Assets/img/p-1.jpg" class="img-fluid"></div>
+                    </a>
+                    <a href="" class="text-decoration-none">
+                        <div class="product-desc px-3 py-3">
+                          <input type="hidden" value="7" class="id-product">
+                            <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
+                            <div class="footer d-flex justify-content-between pt-2">
+                                <div class="price">Rp. 30.000</div>
+                                <div class="trans d-flex align-items-end">702 Terjual</div>
+                            </div>
+                          </div>
+                        </a>
+                        <div class="btn-cart-wrapper px-3 pt-1 pb-3">
+                          <button class="btn-cart text-center">
+                            <p class="btn-text m-0">Add to cart</p>
+                          </button>
+                        </div>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product p-2">
+                <div class="box">
+                    <a href="#" class="text-decoration-none">
+                        <div class="product-img"><img src="Assets/img/p-1.jpg" class="img-fluid"></div>
+                    </a>
+                    <a href="" class="text-decoration-none">
+                        <div class="product-desc px-3 py-3">
+                          <input type="hidden" value="7" class="id-product">
+                            <div class="title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
+                            <div class="footer d-flex justify-content-between pt-2">
+                                <div class="price">Rp. 30.000</div>
+                                <div class="trans d-flex align-items-end">702 Terjual</div>
+                            </div>
+                          </div>
+                        </a>
+                        <div class="btn-cart-wrapper px-3 pt-1 pb-3">
+                          <button class="btn-cart text-center">
+                            <p class="btn-text m-0">Add to cart</p>
+                          </button>
+                        </div>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="bx bx-chevron-right-circle"></div>
+          <div class="bx bx-chevron-left-circle"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
@@ -570,7 +732,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 d-flex gap-5 mt-4 mt-lg-0">
-                    <div class="link-wrap col-2 d-flex flex-column gap-3">
+                    <div class="link-wrap col-1 col-md-2 d-flex flex-column gap-3">
                         <div class="head">Product</div>
                         <div class="child d-flex flex-column gap-1">
                             <a href="#" class="text-decoration-none text-black"><p class="m-0">Catalog</p></a>
@@ -579,7 +741,7 @@
                             <a href="#" class="text-decoration-none text-black"><p class="m-0">Contact</p></a>
                         </div>
                     </div>
-                    <div class="link-wrap col-2 d-flex flex-column gap-3">
+                    <div class="link-wrap col-1 col-md-2 d-flex flex-column gap-3">
                         <div class="head">Information</div>
                         <div class="child d-flex flex-column gap-1">
                             <a href="#" class="text-decoration-none text-black"><p class="m-0">Customer</p></a>
@@ -588,7 +750,7 @@
                             <a href="#" class="text-decoration-none text-black"><p class="m-0">Contact Us</p></a>
                         </div>
                     </div>
-                    <div class="link-wrap col-2 d-flex flex-column gap-3">
+                    <div class="link-wrap col-1 col-md-2 d-flex flex-column gap-3">
                         <div class="head">Company</div>
                         <div class="child d-flex flex-column gap-1">
                             <a href="#" class="text-decoration-none text-black"><p class="m-0">Company Info</p></a>
@@ -597,7 +759,7 @@
                             <a href="#" class="text-decoration-none text-black"><p class="m-0">Email</p></a>
                         </div>
                     </div>
-                    <div class="link-wrap col-2 d-flex flex-column gap-3">
+                    <div class="link-wrap col-1 col-md-2 d-flex flex-column gap-3">
                         <div class="head">Supports</div>
                         <div class="child d-flex flex-column gap-1">
                             <a href="#" class="text-decoration-none text-black"><p class="m-0">Terms And Conditions</p></a>
@@ -613,12 +775,15 @@
   </div>
 
 </body>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 <!-- Bootstrap js -->
-<script src="Assets/Vendor/bootstrap-5.2/js/bootstrap.bundle.min.js"></script>
+  <script src="Assets/Vendor/bootstrap-5.2/js/bootstrap.bundle.min.js"></script>
 
 <!-- Main Js -->
-<script src="Assets/Js/catalog script/script.js"></script>
+  <script src="Assets/Js/catalog script/script.js"></script>
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
 </html>
