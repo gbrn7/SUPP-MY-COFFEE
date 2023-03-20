@@ -298,90 +298,101 @@ $dot-color: rgba(0, 0, 0, 0.466);
     }
 }
 
-.banner{
+.detail{
+    
+    margin-top: 100px;
+    @include media-breakpoint-down(lg){
     margin-top: 85px;
-    .swiper-scrollbar-drag{
-        background-color: whitesmoke;
+    }
+    .img-wrapper{
+        border-radius: 10px;
+        img{
+            border-radius: 10px;
+        }
+    }
+    .head{
+        .title{
+            font-weight: 600;
+            font-size: 23px;
+            letter-spacing: -0.05em;
+            font-weight: map-get($fonts_weights, semiBold);
+            @include media-breakpoint-down(lg){
+                font-size: 15px;
+            }
+            @include media-breakpoint-down(sm){
+                font-size: 10px;
+            }
+        }
+        .trans{
+            font-size: 13px;
+            letter-spacing: -0.05em;
+            font-weight: map-get($fonts_weights, regular);
+            margin-top: 5px;
+            @include media-breakpoint-down(lg){
+                font-size: 9px;
+            }
+        }
+        .price{
+            font-size: 34px;
+            letter-spacing: -0.05em;
+            font-weight: map-get($fonts_weights, bold);
+            @include media-breakpoint-down(lg){
+                font-size: 25px;
+            }
+            @include media-breakpoint-down(sm){
+                font-size: 20px;
+            }
+        }
+    }
+    .footer{
+        margin-top: 16px;
+        .desc-wrap{
+            .title{
+                font-size: 15px;
+                letter-spacing: -0.05em;
+                font-weight: map-get($fonts_weights, medium);
+                @include media-breakpoint-down(lg){
+                    font-size: 12px;
+                }
+                @include media-breakpoint-down(sm){
+                    font-size: 10px;
+                }
+            }
+            .desc{
+                margin-top: 10px;
+                font-size: 13px;
+                letter-spacing: -0.05em;
+                font-weight: map-get($fonts_weights, light);
+                @include media-breakpoint-down(lg){
+                    font-size: 9px;
+                }
+                @include media-breakpoint-down(sm){
+                    font-size: 7px;
+                }
+            }
+        }
+        .btn-cart-wrapper{
+            .btn-cart{
+                padding: 10px 0;
+                border-radius: 10px;
+                border: 1px solid #000000;
+                width: 100%;
+                background-color: white;
+                p{
+                    font-size: 16px;
+                    @include media-breakpoint-down(lg){
+                        font-size: 10px;
+                    }
+                }
+            }
+            .btn-cart:hover{
+                background-color: #000000;
+                color: white;
+            }
+        }
     }
 }
 
-.recomendation{
-    .recomendation-wrapper{
-        .row-1{
-            .title{
-                font-size: 20px;
-                letter-spacing: -0.075em;
-                font-weight: map-get($fonts_weights, semiBold);
-                @include media-breakpoint-down(sm){
-                    font-size: 16px;
-                }
-            }
-        }
-        .row-2{
-            .product{
-                .box{
-                    background-color: white;
-                    border-radius: 16px;
-                    box-shadow: 5px 4px 17px -2px rgba(0, 0, 0, 0.25);
-                    .product-img{
-                        img{
-                            position: relative;
-                            z-index: 0;
-                            border-radius: 16px;
-                        }
-                    }
-                    .product-desc{
-                        color: black;
-                        .title{
-                            font-size: 14px;
-                            letter-spacing: -0.05em;
-                            font-weight: map-get($fonts_weights, regular);
-                            @include media-breakpoint-down(sm){
-                                font-size: 11px;
-                            }
-                        }
-                        .footer{
-                            .price{
-                                font-weight: map-get($fonts_weights, semiBold);
-                                font-size: 20px;
-                                letter-spacing: -0.05em;
-                                @include media-breakpoint-down(sm){
-                                    font-size: 15px;
-                                }
-                            }
-                            .trans{
-                                font-weight: map-get($fonts_weights, light);
-                                font-size: 12px;
-                                letter-spacing: -0.05em;
-                                @include media-breakpoint-down(sm){
-                                    font-size: 7px;
-                                }
-                            }
-                        }
-                    }
-                    
-                    .btn-cart{
-                        padding: 10px 0;
-                        border-radius: 10px;
-                        border: 1px solid #000000;
-                        width: 100%;
-                        background-color: white;
-                        p{
-                            font-size: 16px;
-                            @include media-breakpoint-down(sm){
-                                font-size: 10px;
-                            }
-                        }
-                    }
-                    .btn-cart:hover{
-                        background-color: #000000;
-                        color: white;
-                    }
-                }
-            }
-        }
-    }
-}
 
 .bottom{
     background: url("../../img/bg-ctlg-footer.png");
