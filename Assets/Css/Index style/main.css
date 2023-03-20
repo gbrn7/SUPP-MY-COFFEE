@@ -277,15 +277,30 @@ body::-webkit-scrollbar {
   letter-spacing: -0.05em;
   font-weight: 400;
 }
+@media (max-width: 575.98px) {
+  .bestproduct .bestproduct-wrapper .product .box .product-desc .title {
+    font-size: 11px;
+  }
+}
 .bestproduct .bestproduct-wrapper .product .box .product-desc .footer .price {
   font-weight: 600;
   font-size: 20px;
   letter-spacing: -0.05em;
 }
+@media (max-width: 575.98px) {
+  .bestproduct .bestproduct-wrapper .product .box .product-desc .footer .price {
+    font-size: 15px;
+  }
+}
 .bestproduct .bestproduct-wrapper .product .box .product-desc .footer .trans {
   font-weight: 300;
   font-size: 12px;
   letter-spacing: -0.05em;
+}
+@media (max-width: 575.98px) {
+  .bestproduct .bestproduct-wrapper .product .box .product-desc .footer .trans {
+    font-size: 7px;
+  }
 }
 
 .contact {

@@ -297,17 +297,26 @@ $dot-color: rgba(0, 0, 0, 0.466);
                         font-size: 14px;
                         letter-spacing: -0.05em;
                         font-weight: map-get($fonts_weights, regular);
+                        @include media-breakpoint-down(sm){
+                            font-size: 11px;
+                        }
                     }
                     .footer{
                         .price{
                             font-weight: map-get($fonts_weights, semiBold);
                             font-size: 20px;
                             letter-spacing: -0.05em;
+                            @include media-breakpoint-down(sm){
+                                font-size: 15px;
+                            }
                         }
                         .trans{
                             font-weight: map-get($fonts_weights, light);
                             font-size: 12px;
                             letter-spacing: -0.05em;
+                            @include media-breakpoint-down(sm){
+                                font-size: 7px;
+                            }
                         }
                     }
                 }

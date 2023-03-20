@@ -281,6 +281,24 @@ body::-webkit-scrollbar {
 .banner {
   margin-top: 85px;
 }
+.banner .row {
+  border-radius: 16px;
+}
+.banner .row .mySwiper {
+  border-radius: 16px;
+}
+.banner .row .mySwiper .swiper-wrapper {
+  border-radius: 16px;
+}
+.banner .row .mySwiper .swiper-wrapper .swiper-slide {
+  border-radius: 16px;
+}
+.banner .row .mySwiper .swiper-wrapper .swiper-slide .img-wrapper {
+  border-radius: 16px;
+}
+.banner .row .mySwiper .swiper-wrapper .swiper-slide .img-wrapper img {
+  border-radius: 16px;
+}
 .banner .swiper-scrollbar-drag {
   background-color: whitesmoke;
 }
