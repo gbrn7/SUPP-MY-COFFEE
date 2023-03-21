@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;300;400;500;600;700;900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s all ease;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar .container .logo {
+  border-radius: 10px;
+  max-width: 86px;
+}
+.navbar .container .toggle .ddn i {
+  font-size: 22px;
+}
+@media (max-width: 575.98px) {
+  .navbar .container .toggle .ddn i {
+    font-size: 15px;
+  }
+}
+.navbar .container .toggle .nav-item {
+  position: relative;
+}
+.navbar .container .toggle .nav-item .nav-link {
+  font-weight: 300;
+  color: rgb(42, 42, 42);
+  font-size: 15px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+}
+@media (max-width: 575.98px) {
+  .navbar .container .toggle .nav-item .nav-link {
+    font-size: 13px;
+  }
+}
+.navbar .container .toggle .left-content .dropdown {
+  cursor: pointer;
+}
+.navbar .container .toggle .left-content .dropdown .select {
+  align-items: center;
+  transition: background 0.3s;
+  gap: 10px;
+}
+.navbar .container .toggle .left-content .dropdown .select i {
+  font-size: 18px;
+}
+@media (max-width: 575.98px) {
+  .navbar .container .toggle .left-content .dropdown .select i {
+    font-size: 13px;
+  }
+}
+.navbar .container .toggle .left-content .dropdown .select span {
+  font-size: 16px;
+}
+@media (max-width: 575.98px) {
+  .navbar .container .toggle .left-content .dropdown .select span {
+    font-size: 13px;
+  }
+}
+.navbar .container .toggle .left-content .dropdown .caret {
+  font-size: 20px;
+  transition: 0.3s;
+}
+.navbar .container .toggle .left-content .dropdown .caret-rotate {
+  transform: rotate(180deg);
+}
+.navbar .container .toggle .left-content .dropdown .menu {
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background: whitesmoke;
+  border-radius: 0.5em;
+  color: black;
+  position: absolute;
+  top: 3em;
+  left: 0;
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+  cursor: auto;
+}
+@media (max-width: 991.98px) {
+  .navbar .container .toggle .left-content .dropdown .menu {
+    width: 450%;
+  }
+}
+.navbar .container .toggle .left-content .dropdown .menu .title {
+  font-size: 15px;
+}
+@media (max-width: 767.98px) {
+  .navbar .container .toggle .left-content .dropdown .menu .title {
+    font-size: 13px;
+  }
+}
+.navbar .container .toggle .left-content .dropdown .menu li {
+  padding: 0.7em 0.5em;
+  margin: 0.3em 0;
+  border-radius: 0.5em;
+}
+.navbar .container .toggle .left-content .dropdown .menu li:hover {
+  background-color: white;
+}
+.navbar .container .toggle .left-content .dropdown .menu-open {
+  display: block;
+  opacity: 1;
+}
+.navbar .container .toggle .right-content {
+  box-sizing: border-box;
+}
+.navbar .container .toggle .right-content .input-group .search {
+  background-color: #EDEDED;
+  border-radius: 17px 0px 0px 17px;
+  border: none;
+  padding: 6px 0 6px 18px;
+  font-size: 13px;
+  position: relative;
+  z-index: 3;
+}
+.navbar .container .toggle .right-content .input-group button {
+  border-radius: 17px;
+}
+.navbar .container .toggle .right-content .input-group button i {
+  background-color: #EDEDED;
+  display: inline-block;
+  font-size: 15px;
+  padding: 7.26px 18px;
+  border-radius: 17px;
+}
+.navbar .container .toggle .right-content .input-group .search:focus {
+  outline: invert;
+}
+.navbar .container .toggle .right-content .account p {
+  font-size: 16px;
+}
+@media (max-width: 575.98px) {
+  .navbar .container .toggle .right-content .account p {
+    font-size: 13px;
+  }
+}
+.navbar .container .toggle .right-content .account i {
+  font-size: 18px;
+}
+@media (max-width: 575.98px) {
+  .navbar .container .toggle .right-content .account i {
+    font-size: 13px;
+  }
+}
+.navbar .container .toggle .right-content .dropdown {
+  cursor: pointer;
+}
+.navbar .container .toggle .right-content .dropdown .select {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: background 0.3s;
+}
+.navbar .container .toggle .right-content .dropdown .select i {
+  font-size: 18px;
+}
+@media (max-width: 575.98px) {
+  .navbar .container .toggle .right-content .dropdown .select i {
+    font-size: 13px;
+  }
+}
+.navbar .container .toggle .right-content .dropdown .select span {
+  font-size: 16px;
+}
+@media (max-width: 575.98px) {
+  .navbar .container .toggle .right-content .dropdown .select span {
+    font-size: 13px;
+  }
+}
+.navbar .container .toggle .right-content .dropdown .caret {
+  font-size: 20px;
+  transition: 0.3s;
+}
+.navbar .container .toggle .right-content .dropdown .caret-rotate {
+  transform: rotate(180deg);
+}
+.navbar .container .toggle .right-content .dropdown .menu {
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background: whitesmoke;
+  border-radius: 0.5em;
+  color: black;
+  position: absolute;
+  top: 3em;
+  right: 0;
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+  width: 700%;
+  cursor: auto;
+}
+@media (max-width: 991.98px) {
+  .navbar .container .toggle .right-content .dropdown .menu {
+    left: 0;
+    right: auto;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar .container .toggle .right-content .dropdown .menu {
+    width: 450%;
+  }
+}
+.navbar .container .toggle .right-content .dropdown .menu .title {
+  font-size: 15px;
+}
+@media (max-width: 767.98px) {
+  .navbar .container .toggle .right-content .dropdown .menu .title {
+    font-size: 13px;
+  }
+}
+.navbar .container .toggle .right-content .dropdown .menu li {
+  padding: 0.7em 0.5em;
+  margin: 0.3em 0;
+  border-radius: 0.5em;
+}
+.navbar .container .toggle .right-content .dropdown .menu li .delete-wrap .bx-trash:hover {
+  cursor: pointer;
+  color: red;
+}
+.navbar .container .toggle .right-content .dropdown .menu li .delete-wrap .bx-trash {
+  font-size: 18px;
+}
+@media (max-width: 767.98px) {
+  .navbar .container .toggle .right-content .dropdown .menu li .delete-wrap .bx-trash {
+    font-size: 13px;
+  }
+}
+.navbar .container .toggle .right-content .dropdown .menu li .plus {
+  cursor: pointer;
+  font-size: 20px;
+}
+@media (max-width: 767.98px) {
+  .navbar .container .toggle .right-content .dropdown .menu li .plus {
+    font-size: 15px;
+  }
+}
+.navbar .container .toggle .right-content .dropdown .menu li .qty-input {
+  text-align: center;
+}
+.navbar .container .toggle .right-content .dropdown .menu li .minus {
+  cursor: pointer;
+  font-size: 20px;
+}
+@media (max-width: 767.98px) {
+  .navbar .container .toggle .right-content .dropdown .menu li .minus {
+    font-size: 15px;
+  }
+}
+.navbar .container .toggle .right-content .dropdown .menu li button {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 7px;
+  font-size: 15px;
+  color: black;
+}
+@media (max-width: 767.98px) {
+  .navbar .container .toggle .right-content .dropdown .menu li button {
+    font-size: 13px;
+  }
+}
+.navbar .container .toggle .right-content .dropdown .menu li button:hover {
+  background-color: black;
+  color: white;
+}
+.navbar .container .toggle .right-content .dropdown .menu li:hover {
+  background-color: white;
+}
+.navbar .container .toggle .right-content .dropdown .menu-open {
+  display: block;
+  opacity: 1;
+}/*# sourceMappingURL=main.css.map */

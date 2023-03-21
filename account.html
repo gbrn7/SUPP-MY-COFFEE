@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog</title>
+
+  <!-- Icon -->
+  <link rel="shortcut icon" href="Assets/img/Logo.png" type="image/x-icon">
+  
+  <!-- CSS Bootrap-->
+  <link rel="stylesheet" href="Assets/Vendor/bootstrap-5.2/css/bootstrap.min.css" />
+
+  <!-- Link BoxIcon -->
+  <link rel="stylesheet" href="Assets/Vendor/boxicons-master/css/boxicons.min.css" />
+
+  <!-- Link Remixicon -->
+  <link rel="stylesheet" href="Assets/Vendor/RemixIcon-master/fonts/remixicon.css" />
+
+  <!-- Link AOS -->
+  <link rel="stylesheet" href="Assets/Vendor/aos-2/dist/aos.css" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="Assets/Css/Account Style/main.css" />
+
+</head>
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top bg-white navbar-expand-lg navbar-light ">
+      <div class="container py-1 d-lg-flex align-items-lg-center">
+          <img src="Assets/img/Logo.png" class="logo" />
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+          <div class="collapse mt-3 mt-lg-0 navbar-collapse justify-content-between align-items-center toggle" id="navbarNav">
+            <div class="left-content ms-lg-3 d-flex justify-content-start">
+              <ul class="navbar-nav gap-3 text-lg-start mt-4 mb-4 mb-lg-0 mt-lg-0 d-flex align-items-start align-items-lg-center">
+                <li class="nav-item mt-3 mt-lg-0">
+                  <div href="#" class="nav-link dropdown ddn-ctg p-0 bg-transparent border-0">
+                    <div class="ddn  select d-flex align-items-center gap-2">
+                      <span class="selected">Categories</span>
+                      <div class="caret bx bx-chevron-down"></div>
+                    </div>
+                    <ul class="menu">
+                      <li><a href="#" class="text-decoration-none text-black title">Arabika</a></li>
+                      <li><a href="#" class="text-decoration-none text-black title">Robusta</a></li>
+                      <li><a href="#" class="text-decoration-none text-black title">Liberika</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item mt-3 mt-lg-0">
+                  <a href="#recomendation" class="nav-link p-0">Recomendation</a>
+                </li>
+                <li class="nav-item mt-3 mt-lg-0">
+                  <a href="#whatsnew" class="nav-link p-0">What's New</a>
+                </li>
+              </ul>
+            </div>
+            <div class="right-content align-items-start d-flex flex-column flex-lg-row  gap-3  ">
+              <form action="#" method="get">
+                <div class="input-group d-flex align-items-center">
+                  <input type="text" name="Search" class="search form " id="">
+                  <button class="border-0" type="submit"><i class='bx bx-search' ></i></button>
+                </div>
+              </form>
+              <a href="#" class="text-decoration-none text-black account d-flex align-items-center gap-2">
+                <i class='bx bxs-user'></i>
+                <p class="m-0">Account</p>
+              </a>
+              <div class="dropdown">
+                <div class="select">
+                  <i class='bx bx-cart crt cart-icon' ></i>
+                  <span class="selected">Cart</span>
+                  <div class="caret bx bx-chevron-down"></div>
+                </div>
+                <ul class="menu menu-cart">
+                  <form action="#">
+                  <div class="menu-wrap d-flex flex-column-reverse">
+                      <!-- <li>
+                        <input type="hidden" name="id" class="id" value="01">
+                        <div class="title m-0 row align-items-center">
+                          <div class="col-8 title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
+                          <div class="col-3 qty-btn d-flex gap-3 justify-content-center align-items-center">
+                            <div class="plus" class="col-4">+</div>
+                            <input type="text"  value="1"  class="col-4 qty-input">
+                            <div class="minus"  class="col-4">-</div>
+                          </div>
+                          <div class="col-1 delete-wrap text-center"><i class='bx bx-trash'></i></div>
+                        </div>
+                      </li>
+                      <li>
+                        <input type="hidden" name="id" class="id" value="01">
+                        <div class="title m-0 row align-items-center">
+                          <div class="col-8 title">Kopi Robusta Gayo Monero Robusta Coffee 250g - Biji Kopi</div>
+                          <div class="col-3 qty-btn d-flex gap-3 justify-content-center align-items-center">
+                            <div class="plus" class="col-4">+</div>
+                            <input type="text"  value="1"  class="col-4 qty-input">
+                            <div class="minus"  class="col-4">-</div>
+                          </div>
+                          <div class="col-1 delete-wrap text-center"><i class='bx bx-trash'></i></div>
+                        </div>
+                      </li>
+                      <li>
+                        <input type="hidden" name="id" class="id" value="01">
+                        <div class="title m-0 row align-items-center">
+                          <div class="col-8 title">Kopi Robusta Gayo Monero Robusta Coffee 2500g - Biji Kopi</div>
+                          <div class="col-3 qty-btn d-flex gap-3 justify-content-center align-items-center">
+                            <div class="plus" class="col-4">+</div>
+                            <input type="text"  value="1"  class="col-4 qty-input">
+                            <div class="minus"  class="col-4">-</div>
+                          </div>
+                          <div class="col-1 delete-wrap text-center"><i class='bx bx-trash'></i></div>
+                        </div>
+                      </li> -->
+
+                  </div>
+                  <li class="btn-wrap row p-1">
+                    <button type="submit " class="p-1 mt-2 btn ">Checkout</button>
+                  </li>
+                  </form>
+                </ul>
+              </div>
+          </div>
+        </div>
+    </nav>
+  <!-- Navbar End -->
+
+
+</body>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Bootstrap js -->
+  <script src="Assets/Vendor/bootstrap-5.2/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main Js -->
+  <script src="Assets/Js/Account Script/script.js"></script>
+
+
+
+</html>
