@@ -297,3 +297,34 @@ $dot-color: rgba(0, 0, 0, 0.466);
         }
     }
 }
+
+.head{
+    margin-top: 100px;
+    @include media-breakpoint-down(lg){
+        margin-top: 85px;
+    }
+    .title-wrapper{
+        .title{
+            font-size: 63px;
+            letter-spacing: -0.02em;
+            font-weight: map-get($fonts_weights, bold);
+            @include media-breakpoint-down(lg){
+                font-size: 50px;
+            }
+        }
+        i{
+            font-size: 80px;
+            @include media-breakpoint-down(lg){
+                font-size: 60px;
+            }
+        }
+
+    }
+    .row-2{
+        .checkbox{
+            width: 0;
+            opacity: 0;
+            height: 0;
+        }
+    }
+}

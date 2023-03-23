@@ -276,4 +276,36 @@ body::-webkit-scrollbar {
 .navbar .container .toggle .right-content .dropdown .menu-open {
   display: block;
   opacity: 1;
+}
+
+.head {
+  margin-top: 100px;
+}
+@media (max-width: 991.98px) {
+  .head {
+    margin-top: 85px;
+  }
+}
+.head .title-wrapper .title {
+  font-size: 63px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+@media (max-width: 991.98px) {
+  .head .title-wrapper .title {
+    font-size: 50px;
+  }
+}
+.head .title-wrapper i {
+  font-size: 80px;
+}
+@media (max-width: 991.98px) {
+  .head .title-wrapper i {
+    font-size: 60px;
+  }
+}
+.head .row-2 .checkbox {
+  width: 0;
+  opacity: 0;
+  height: 0;
 }/*# sourceMappingURL=main.css.map */
