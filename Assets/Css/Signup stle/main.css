@@ -1,0 +1,89 @@
+.login {
+    height: 100vh;
+}
+
+.logo {
+    width: 155px;
+    height: 78px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: -0.07em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    margin-top: 19px;
+}
+
+.login-form input {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    color: #736A6A;
+    margin-bottom: 20px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.pass-icon {
+    position: absolute;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    left: 320px;
+    top: 45px;
+    cursor: pointer;
+}
+
+.login-form span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.login-form .login-btn {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 46px;
+    background: #58311C;
+    border-radius: 8px;
+    color: #fff;
+    margin-top: 20px;
+    border: none;
+
+}
+
+.login-img {
+    position: absolute;
+    width: 588px;
+    height: 90%;
+    left: 122px;
+    top: 47px;
+    border: 3px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 41px;
+}
