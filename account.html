@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head-wrap>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="Assets/Css/Account Style/main.css" />
 
-</head>
+</head-wrap>
 <body>
 
     <!-- Navbar Start -->
@@ -140,20 +140,119 @@
           </div>
         </div>
         <div class="row row-2 justify-content-center">
-          <div class="col-3 text-center toggle-wrapper position-relative">
+          <div class="col-12 col-lg-3 text-center toggle-wrapper position-relative">
             <input type="checkbox" class="checkbox ">
-            <label for="checkbox">
-              <div class="slider"></div>
-              <div class="text-wrapper">
-                <p class="m-0 profile">Profile</p>
-                <p class="m-0 history">History</p>
+            <label class="switch" for="checkbox">
+              <div class="slider-wrapper w-100 d-flex ">
+                <div class="slider"></div>
               </div>
+                <div class="text-wrapper w-100 d-flex justify-content-between">
+                  <p class="m-0 profile col-6">Profile</p>
+                  <p class="m-0 history col-6">History</p>
+                </div>
             </label>
           </div>
         </div>
       </div>
     </section>
     <!-- Header End -->
+
+    <!-- Profile Start -->
+    <section class="profile">
+      <div class="container profile-wrapper d-flex flex-column gap-4">
+        <div class="row row-1 justify-content-center">
+          <div class="col-lg-6 col-12">
+            <div class="title-wrapper">
+              <p class="name m-0 mb-2">Name</p>
+            </div>
+            <input type="text" disabled value="Isyana Sarasvati" name="name" id="name" class="col-12">
+          </div>
+        </div>
+        <div class="row row-2 justify-content-center">
+          <div class="col-lg-6 col-12">
+            <div class="title-wrapper">
+              <p class="name m-0 mb-2">Email</p>
+            </div>
+            <input type="text" disabled value="IsyanaSarasvati@gmail.com" name="email" id="email" class="col-12">
+          </div>
+        </div>
+        <div class="row row-3 justify-content-center">
+          <div class="col-lg-6 col-12">
+            <div class="title-wrapper">
+              <p class="name m-0 mb-2">Address</p>
+            </div>
+            <input type="text" disabled value="Jl Merpati Putih No 7, Jakarta Selatan" name="address" id="address" class="col-12">
+          </div>
+        </div>
+        <div class="row row-4 justify-content-center">
+          <div class="col-lg-6 col-12">
+            <div class="title-wrapper">
+              <p class="name m-0 mb-2">Phone</p>
+            </div>
+            <input type="text" disabled value="089632547456" name="phone" id="phone" class="col-12">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Profile End -->
+
+       <!-- Footer Start -->
+       <section class="footer">
+        <div class="container footer-wrapper">
+            <div class="row row-1 mt-5">
+                <div class="col-12 col-lg-6">
+                    <div class="content d-flex flex-column gap-3">
+                        <div class="img-wrap col-2"><img class="img-fluid rounded-4" src="Assets/img/Logo.png"></div>
+                        <div class="text col-7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim vitae consequuntur recusandae possimus soluta corporis </div>
+                        <div class="socmed-wrap col-4">
+                            <a href="#"><img src="Assets/img/Instagram.png" alt=""></a>
+                            <a href="#"><img src="Assets/img/Facebook.png" alt=""></a>
+                            <a href="#"><img src="Assets/img/Whatsapp.png" alt=""></a>
+                            <a href="#"><img src="Assets/img/Twitter.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex gap-5 mt-4 mt-lg-0">
+                    <div class="link-wrap col-1 col-md-2 d-flex flex-column gap-3">
+                        <div class="head-wrap">Product</div>
+                        <div class="child d-flex flex-column gap-1">
+                            <a href="#" class="text-decoration-none text-black"><p class="m-0">Catalog</p></a>
+                            <a href="#" class="text-decoration-none text-black"><p class="m-0">Select Product</p></a>
+                            <a href="#" class="text-decoration-none text-black"><p class="m-0">Best Product</p></a>
+                            <a href="#" class="text-decoration-none text-black"><p class="m-0">Contact</p></a>
+                        </div>
+                    </div>
+                    <div class="link-wrap col-1 col-md-2 d-flex flex-column gap-3">
+                        <div class="head-wrap">Information</div>
+                        <div class="child d-flex flex-column gap-1">
+                            <a href="#" class="text-decoration-none text-black"><p class="m-0">Customer</p></a>
+                            <a href="#" class="text-decoration-none text-black"><p class="m-0">Social Media</p></a>
+                            <a href="#" class="text-decoration-none text-black"><p class="m-0">Best Product</p></a>
+                            <a href="#" class="text-decoration-none text-black"><p class="m-0">Contact Us</p></a>
+                        </div>
+                    </div>
+                    <div class="link-wrap col-1 col-md-2 d-flex flex-column gap-3">
+                        <div class="head-wrap">Company</div>
+                        <div class="child d-flex flex-column gap-1">
+                            <a href="#" class="text-decoration-none text-black"><p class="m-0">Company Info</p></a>
+                            <a href="#" class="text-decoration-none text-black"><p class="m-0">Investor</p></a>
+                            <a href="#" class="text-decoration-none text-black"><p class="m-0">Partners</p></a>
+                            <a href="#" class="text-decoration-none text-black"><p class="m-0">Email</p></a>
+                        </div>
+                    </div>
+                    <div class="link-wrap col-1 col-md-2 d-flex flex-column gap-3">
+                        <div class="head-wrap">Supports</div>
+                        <div class="child d-flex flex-column gap-1">
+                            <a href="#" class="text-decoration-none text-black"><p class="m-0">Terms And Conditions</p></a>
+                            <a href="#" class="text-decoration-none text-black"><p class="m-0">Insurance</p></a>
+                            <a href="#" class="text-decoration-none text-black"><p class="m-0">Warranty</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer End -->
 
 
 </body>
