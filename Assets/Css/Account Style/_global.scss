@@ -329,10 +329,12 @@ $dot-color: rgba(0, 0, 0, 0.466);
                 opacity: 0;
                 height: 100%;
                 position: absolute;
+                cursor: pointer;
                 z-index: 10;
                 left: 0;
             }
             .switch{
+                cursor: pointer;
                 background-color: #B5B5B5;
                 display: flex;
                 position: relative;
@@ -401,6 +403,155 @@ $dot-color: rgba(0, 0, 0, 0.466);
             letter-spacing: -0.07em;
             color: black;
         }
+    }
+}
+
+.history{
+    margin-top: 40px;
+    .history-wrapper{
+        .text-wrapper{
+            padding: 10px 16px;
+            background-color: #D7D7D7;
+            border-radius: 10px;
+            p{
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: -0.07em;
+                font-weight: map-get($fonts_weights, medium);
+                position: relative;
+                cursor: pointer;
+                @include media-breakpoint-down(lg){
+                    font-size: 12px;
+                }
+            }
+            .bb {
+                border-bottom: 1px solid black;
+            }
+        }
+        .row-2{
+            .title{
+                @include media-breakpoint-down(lg){
+                    font-size: 12px;
+                }
+            }
+            .status{
+                @include media-breakpoint-down(lg){
+                    font-size: 12px;
+                }
+            }
+                .item{
+                    background-color: #F0F3F7;
+                    border-radius: 25px;
+                    .product-wrapper{
+                        .product{
+                            .title{
+                                font-size: 15px;
+                                letter-spacing: -0.05em;
+                                @include media-breakpoint-down(lg){
+                                    font-size: 12px;
+                                }
+                                @include media-breakpoint-down(md){
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                        .right-content{
+                            .btn-1{
+                                font-size: 16px;
+                                letter-spacing: -0.05em;
+                                font-weight: map-get($fonts_weights, medium);
+                                @include media-breakpoint-down(lg){
+                                    font-size: 12px;
+                                }
+                                @include media-breakpoint-down(md){
+                                    font-size: 10px;
+                                }
+                            }
+                            .btn-2{
+                                font-size: 16px;
+                                letter-spacing: -0.05em;
+                                font-weight: map-get($fonts_weights, medium);
+                                cursor: pointer;
+                                @include media-breakpoint-down(lg){
+                                    font-size: 12px;
+                                }
+                                @include media-breakpoint-down(md){
+                                    font-size: 10px;
+                                }
+                            }
+                            .btn-2:hover{
+                                background-color: black !important;
+                                color: white !important;
+    
+                            }
+                        }
+                    }
+                }
+            
+
+        }      
+        .row-3{
+            .title{
+                @include media-breakpoint-down(lg){
+                    font-size: 12px;
+                }
+            }
+            .status{
+                @include media-breakpoint-down(lg){
+                    font-size: 12px;
+                }
+            }
+                .item{
+                    background-color: #F0F3F7;
+                    border-radius: 25px;
+                    .product-wrapper{
+                        .product{
+                            .title{
+                                font-size: 15px;
+                                letter-spacing: -0.05em;
+                                @include media-breakpoint-down(lg){
+                                    font-size: 12px;
+                                }
+                                @include media-breakpoint-down(md){
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                        .right-content{
+                            .btn-1{
+                                font-size: 16px;
+                                letter-spacing: -0.05em;
+                                font-weight: map-get($fonts_weights, medium);
+                                @include media-breakpoint-down(lg){
+                                    font-size: 12px;
+                                }
+                                @include media-breakpoint-down(md){
+                                    font-size: 10px;
+                                }
+                            }
+                            .btn-2{
+                                font-size: 16px;
+                                letter-spacing: -0.05em;
+                                font-weight: map-get($fonts_weights, medium);
+                                cursor: pointer;
+                                @include media-breakpoint-down(lg){
+                                    font-size: 12px;
+                                }
+                                @include media-breakpoint-down(md){
+                                    font-size: 10px;
+                                }
+                            }
+                            .btn-2:hover{
+                                background-color: black !important;
+                                color: white !important;
+    
+                            }
+                        }
+                    }
+                }
+            
+
+        }      
     }
 }
 
