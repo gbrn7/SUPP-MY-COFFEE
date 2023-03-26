@@ -51,7 +51,6 @@ function clickHandler(event) {
   // triggerEvent(countEl, "change");
 }
 
-
 const products = document.querySelectorAll(".product");
 products.forEach(product => {
   const y = product.querySelector('.btn-cart');
@@ -61,6 +60,8 @@ products.forEach(product => {
     const item = addToCart(id, title);
     if (item) {
       iteminit(item);
+      const menuwrap = document.querySelector('.menu-wrap');
+      menuwrap.scrollTo(0, menuwrap.scrollHeight);
     }
   })
 });

@@ -51,7 +51,6 @@ function clickHandler(event) {
   // triggerEvent(countEl, "change");
 }
 
-
 function addToCart(id, title) {
   const item = elementFromHtml(
     `

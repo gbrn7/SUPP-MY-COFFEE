@@ -61,6 +61,8 @@ products.forEach(product => {
     const item = addToCart(id, title);
     if (item) {
       iteminit(item);
+      const menuwrap = document.querySelector('.menu-wrap');
+      menuwrap.scrollTo(0, menuwrap.scrollHeight);
     }
   })
 });

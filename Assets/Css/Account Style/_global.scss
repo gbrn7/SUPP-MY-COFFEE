@@ -284,6 +284,11 @@ $dot-color: rgba(0, 0, 0, 0.466);
                         li:hover{
                             background-color: white;
                         }
+
+                        .menu-wrap{
+                            max-height: 250px;
+                            overflow-y: auto;
+                        }
                     }
                     
                     .menu-open{
@@ -402,6 +407,27 @@ $dot-color: rgba(0, 0, 0, 0.466);
             font-size: 19px;
             letter-spacing: -0.07em;
             color: black;
+        }
+    }
+    .row-5{
+        .row{
+                padding-right: 0.75rem;
+                padding-left: 0.75rem;
+        }
+        .btn-wrapper{
+            border-radius: 9px;
+            border: 1px solid black;
+            p{
+                font-weight: map-get($fonts_weights, medium);
+                font-size: 16px;
+
+            }
+        }
+        .btn-wrapper:hover{
+            background-color: black;
+            p{
+                color: white;
+            }
         }
     }
 }

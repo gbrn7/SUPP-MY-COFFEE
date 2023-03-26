@@ -273,6 +273,10 @@ body::-webkit-scrollbar {
 .navbar .container .toggle .right-content .dropdown .menu li:hover {
   background-color: white;
 }
+.navbar .container .toggle .right-content .dropdown .menu .menu-wrap {
+  max-height: 250px;
+  overflow-y: auto;
+}
 .navbar .container .toggle .right-content .dropdown .menu-open {
   display: block;
   opacity: 1;
@@ -391,6 +395,24 @@ body::-webkit-scrollbar {
   font-size: 19px;
   letter-spacing: -0.07em;
   color: black;
+}
+.profile .row-5 .row {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+.profile .row-5 .btn-wrapper {
+  border-radius: 9px;
+  border: 1px solid black;
+}
+.profile .row-5 .btn-wrapper p {
+  font-weight: 500;
+  font-size: 16px;
+}
+.profile .row-5 .btn-wrapper:hover {
+  background-color: black;
+}
+.profile .row-5 .btn-wrapper:hover p {
+  color: white;
 }
 
 .history {
