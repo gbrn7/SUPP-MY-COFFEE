@@ -10,7 +10,7 @@
 }
 
 .header h1 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
@@ -20,6 +20,11 @@
     color: #000000;
     margin-bottom: 20px;
 }
+@media (max-width: 575.98px) {
+    .header h1  {
+        font-size: 20px;
+    }
+  }
 
 .login-form label {
     font-family: 'Poppins', sans-serif;
@@ -28,7 +33,6 @@
     font-size: 14px;
     line-height: 21px;
     color: #000000;
-    margin-top: 19px;
 }
 
 .login-form input {
@@ -39,25 +43,27 @@
     line-height: 18px;
     letter-spacing: 0.05em;
     color: #736A6A;
-    margin-bottom: 20px;
+
 }
 
 .password-container{
     position: relative;
 }
 
+.pass-wrapper{
+    position: relative;
+}
+
 .pass-icon {
-    position: absolute;
-    display: inline-block;
     width: 22px;
     height: 22px;
-    left: 320px;
-    top: 45px;
     cursor: pointer;
+    right: 6px;
+    top: 4px;
 }
 
 .login-form span {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -72,7 +78,6 @@
     background: #58311C;
     border-radius: 8px;
     color: #fff;
-    margin-top: 20px;
     border: none;
 }
 
@@ -86,3 +91,27 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 41px;
 }
+
+@media (max-width: 575.98px) {
+    .header h1  {
+        font-size: 20px;
+    }
+    .pass-icon {
+        width: 15px;
+        height: 15px;
+        right: 6px;
+        top: 8px;
+    }
+    .login-form label{
+        font-size: 10px;
+    }
+    .login-form input {
+        font-size: 10px;
+    }
+    .login-form span {
+        font-size: 8px;
+    }
+    .login-btn{
+        font-size: 12px;
+    }
+  }

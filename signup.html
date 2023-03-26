@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assets/Css/Login style/main.css">
+    <link rel="stylesheet" href="Assets/Css/Signup style/main.css">
     <title>Sign Up</title>
     <!-- CSS Bootrap-->
     <link rel="stylesheet" href="Assets/Vendor/bootstrap-5.2/css/bootstrap.min.css" />
@@ -20,33 +20,43 @@
 </head>
 
 <body>
-    <section class="login d-flex">
-        <div class="login-left w-50 h-100">
-            <div class="row justify-content-center align-items-center h-100">
+    <section class="login d-flex justify-content-center justify-content-lg-between">
+        <div class="login-left w-50 h-100 d-none d-lg-block">
+            <div class="row justify-content-center align-items-center h-100 ">
                 <div class="col-4">
-                    <img src="Assets/img/signup.png" class="login-img">
+                    <img src="Assets/img/signup.png" class="signUp-img">
                 </div>
             </div>
         </div>
         <div class="login-right w-50 h-100">
             <div class="row justify-content-center align-items-center h-100">
-                <div class="col-6">
+                <div class="col-10 col-lg-6">
                     <div class="header">
                         <div class="text-center">
                             <img src="Assets/img/Logo.png" class="logo">
-                            <h1>Create an account</h1>
+                            <h1  class="my-0 my-lg-3">Create an account</h1>
                         </div>
                     </div>
-                    <div class="login-form">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Masukan email">
-                        <div class="password-container">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Masukan password">
-                            <img src="Assets/img/eye_slash.png" onclick="pass()" class="pass-icon" id="pass-icon">
-                        </div>
-                        <button class="login-btn">Buat akun</button>
-                        <div class="text-center">
+                    <form action="#">
+                    <div class="signUp-form d-flex flex-column gap-1 gap-lg-2 mt-2 mt-lg-4">
+                            <label for="name" class="col-12">Nama</label>
+                            <input type="text" class="form-control" id="nama" placeholder="Masukan nama">
+                            <label for="address" class="col-12">Alamat</label>
+                            <input type="email" class="form-control" id="email" placeholder="Masukan alamat">
+                            <label for="noPhone" class="col-12">No Hp</label>
+                            <input type="text" class="form-control" id="email" placeholder="Masukan Nomor Handphone">
+                            <label for="email" class="col-12">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Masukan email">
+                            <div class="password-container">
+                                <label for="password" class="col-12">Password</label>
+                                <div class="pass-wrapper position-relative d-flex">
+                                    <input type="password" class="form-control" id="password" placeholder="Masukan password">
+                                    <img src="Assets/img/eye_slash.png" onclick="pass()" class="pass-icon position-absolute" id="pass-icon">
+                                </div>
+                            </div>
+                            <button class="signUp-btn mt-2 mt-lg-3" type="submit">Buat akun</button>
+                        </form>
+                        <div class="text-center mt-1 mt-lg-2">
                             <span class="d-inline">Sudah memiliki akun? <a href="#"
                                 class="d-inline text-decoration-none">Login</a></span>
                         </div>
