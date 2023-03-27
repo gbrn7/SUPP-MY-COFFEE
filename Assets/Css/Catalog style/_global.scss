@@ -284,6 +284,11 @@ $dot-color: rgba(0, 0, 0, 0.466);
                         li:hover{
                             background-color: white;
                         }
+
+                        .menu-wrap{
+                            max-height: 250px;
+                            overflow-y: auto;
+                        }
                     }
                     
                     .menu-open{

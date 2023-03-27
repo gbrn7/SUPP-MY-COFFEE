@@ -51,20 +51,6 @@ function clickHandler(event) {
   // triggerEvent(countEl, "change");
 }
 
-
-const products = document.querySelectorAll(".product");
-products.forEach(product => {
-  const y = product.querySelector('.btn-cart');
-  y.addEventListener('click', () => {
-    const id = product.querySelector('.id-product').value;
-    const title = product.querySelector('.title').innerHTML;
-    const item = addToCart(id, title);
-    if (item) {
-      iteminit(item);
-    }
-  })
-});
-
 function addToCart(id, title) {
   const item = elementFromHtml(
     `
@@ -145,3 +131,39 @@ function elementFromHtml(html) {
 
   return template.content.firstElementChild;
 }
+
+const z = document.querySelectorAll(".t-history");
+const th = document.querySelector(".t-history-1");
+const th2 = document.querySelector(".t-history-2");
+const row1 = document.querySelector(".op-wrapper");
+const row2 = document.querySelector(".completed-wrapper");
+
+th.addEventListener('click', () => {
+  if (row1.classList.contains('d-none')) {
+    row1.classList.remove('d-none');
+    row2.classList.add('d-none');
+    z.forEach((x) => {
+      x.classList.toggle('bb')
+    });
+  }
+})
+th2.addEventListener('click', () => {
+  if (!row1.classList.contains('d-none')) {
+    row1.classList.add('d-none');
+    row2.classList.remove('d-none');
+    z.forEach((x) => {
+      x.classList.toggle('bb')
+    });
+  }
+})
+
+
+const cb = document.querySelector(".checkbox");
+
+cb.addEventListener('click', () => {
+  const x = document.querySelector('#profile');
+  const y = document.querySelector('#history');
+
+  x.classList.toggle('d-none');
+  y.classList.toggle('d-none');
+});

@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets/Css/Login style/main.css">
     <title>Login</title>
+
+      <!-- Icon -->
+    <link rel="shortcut icon" href="Assets/img/Logo.png" type="image/x-icon">
+
     <!-- CSS Bootrap-->
     <link rel="stylesheet" href="Assets/Vendor/bootstrap-5.2/css/bootstrap.min.css" />
 
@@ -20,8 +24,8 @@
 </head>
 
 <body>
-    <section class="login d-flex">
-        <div class="login-left w-50 h-100">
+    <section class="login d-flex justify-content-center justify-content-lg-between">
+        <div class="login-left w-50 h-100 d-none d-lg-block">
             <div class="row justify-content-center align-items-center h-100">
                 <div class="col-4">
                     <img src="Assets/img/login.png" class="login-img">
@@ -30,26 +34,30 @@
         </div>
         <div class="login-right w-50 h-100">
             <div class="row justify-content-center align-items-center h-100">
-                <div class="col-6">
+                <div class="col-10 col-lg-6">
                     <div class="header">
                         <div class="text-center">
                             <img src="Assets/img/Logo.png" class="logo">
-                            <h1>WELCOME BACK!</h1>
+                            <h1 class="my-0 my-lg-3">WELCOME BACK!</h1>
                         </div>
                     </div>
-                    <div class="login-form">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Masukan email">
-                        <div class="password-container">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Masukan password">
-                            <img src="Assets/img/eye_slash.png" onclick="pass()" class="pass-icon" id="pass-icon">
-                        </div>
-                        <div class="text-center">
-                            <span class="d-inline">Belum punya akun? <a href="#"
-                                class="d-inline text-decoration-none">Daftar</a></span>
-                        </div>
-                        <button class="login-btn">Login</button>
+                    <form action="#" method="post">
+                    <div class="login-form d-flex flex-column gap-1 gap-lg-2 mt-2 mt-lg-4">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Masukan email">
+                            <div class="password-container">
+                                <label for="password">Password</label>
+                                <div class="pass-wrapper position-relative d-flex">
+                                    <input type="password" class="form-control" id="password" placeholder="Masukan password">
+                                    <img src="Assets/img/eye_slash.png" onclick="pass()" class="pass-icon position-absolute" id="pass-icon">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <span class="d-inline">Belum punya akun? <a href="#"
+                                    class="d-inline text-decoration-none">Daftar</a></span>
+                            </div>
+                            <button class="login-btn mt-1 mt-lg-2" type="submit">Login</button>
+                        </form>
                     </div>
                 </div>
             </div>

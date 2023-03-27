@@ -273,6 +273,10 @@ body::-webkit-scrollbar {
 .navbar .container .toggle .right-content .dropdown .menu li:hover {
   background-color: white;
 }
+.navbar .container .toggle .right-content .dropdown .menu .menu-wrap {
+  max-height: 250px;
+  overflow-y: auto;
+}
 .navbar .container .toggle .right-content .dropdown .menu-open {
   display: block;
   opacity: 1;
