@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/Css/Login style/main.css">
+    <title>Login</title>
+    <!-- CSS Bootrap-->
+    <link rel="stylesheet" href="Assets/Vendor/bootstrap-5.2/css/bootstrap.min.css" />
+
+    <!--Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@400;600&family=Roboto&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="login d-flex">
+        <div class="login-right w-50 h-100">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-4">
+                    <img src="Assets/img/login-admin.png" class="login-img">
+                </div>
+            </div>
+        </div>
+        <div class="login-left w-50 h-100">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-6">
+                    <div class="header">
+                        <div class="text-center">
+                            <img src="Assets/img/Logo.png" class="logo">
+                            <h1>Login sebagai Admin</h1>
+                        </div>
+                    </div>
+                    <div class="login-form">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Masukan email">
+                        <div class="password-container">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Masukan password">
+                            <img src="Assets/img/eye_slash.png" onclick="pass()" class="pass-icon" id="pass-icon">
+                        </div>
+                        <button class="login-btn">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="Assets/Js/login script/script.js"></script>
+</body>
+
+</html>
