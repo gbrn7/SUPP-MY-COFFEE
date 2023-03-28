@@ -23,15 +23,15 @@
 </head>
 
 <body>
-    <section class="login d-flex justify-content-center justify-content-lg-between">
-        <div class="login-left w-50 h-100 d-none d-lg-block">
+    <section class="signup d-flex justify-content-center justify-content-lg-between">
+        <div class="signup-left w-50 h-100 d-none d-lg-block">
             <div class="row justify-content-center align-items-center h-100 ">
                 <div class="col-4">
-                    <img src="Assets/img/signup.png" class="login-img">
+                    <img src="Assets/img/signup.png" class="signup-img">
                 </div>
             </div>
         </div>
-        <div class="login-right w-50 h-100">
+        <div class="signup-right w-50 h-100">
             <div class="row justify-content-center align-items-center h-100">
                 <div class="col-10 col-lg-6">
                     <div class="header">
@@ -41,17 +41,23 @@
                         </div>
                     </div>
                     <form action="#">
-                    <div class="login-form d-flex flex-column gap-1 gap-lg-2 mt-2 mt-lg-4">
-                            <label for="email" class="col-12">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Masukan email">
-                            <div class="password-container">
-                                <label for="password" class="col-12">Password</label>
-                                <div class="pass-wrapper position-relative d-flex">
-                                    <input type="password" class="form-control" id="password" placeholder="Masukan password">
-                                    <img src="Assets/img/eye_slash.png" onclick="pass()" class="pass-icon position-absolute" id="pass-icon">
-                                </div>
-                            </div>
-                            <button class="login-btn mt-2 mt-lg-3" type="submit">Buat akun</button>
+                    <div class="signup-form d-flex flex-column gap-1 gap-lg-2 mt-2 mt-lg-4">
+                        <label for="name" class="col-12">Nama</label>
+                        <input type="text" class="form-control" id="name" placeholder="Masukkan nama">
+                            <label for="address" class="col-12">Alamat</label>
+                                    <input type="text" class="form-control" id="address" placeholder="Masukkan alamat">
+                                    <label for="phone" class="col-12">No Telepon</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="Masukkan no telepon">
+                                    <label for="email" class="col-12">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Masukkan email">
+                                    <div class="password-container">
+                                        <label for="password" class="col-12">Password</label>
+                                        <div class="pass-wrapper position-relative d-flex">
+                                            <input type="password" class="form-control" id="password" placeholder="Masukkan password">
+                                            <img src="Assets/img/eye_slash.png" onclick="pass()" class="pass-icon position-absolute" id="pass-icon">
+                                        </div>
+                                    </div>
+                                    <button class="signup-btn mt-2 mt-lg-3" type="submit">Buat akun</button>
                         </form>
                         <div class="text-center mt-1 mt-lg-2">
                             <span class="d-inline">Sudah memiliki akun? <a href="#"
