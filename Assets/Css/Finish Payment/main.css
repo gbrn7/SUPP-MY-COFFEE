@@ -15,7 +15,7 @@ body::-webkit-scrollbar {
 
 .finish-payment {
   height: 100vh;
-  gap: 145px;
+  gap: 115px;
 }
 .finish-payment .main .container-fluid .row .text-wrapper {
   font-family: "Poppins", sans-serif;

@@ -67,6 +67,12 @@ $dot-color: rgba(0, 0, 0, 0.466);
 
 .home {
     margin-top: 160px;
+    @include media-breakpoint-down(lg){
+    margin-top: 100px;
+    }
+    @include media-breakpoint-down(md){
+    margin-top: 60px;
+    }
     .home-wrapper {
         .head {
             h1 {
@@ -76,6 +82,10 @@ $dot-color: rgba(0, 0, 0, 0.466);
 
                 @include media-breakpoint-down(lg){
                     font-size: 50px;
+                    text-align: center;
+                }
+                @include media-breakpoint-down(md){
+                    font-size: 40px;
                 }
                 span {
                     color: #E6A06A;
