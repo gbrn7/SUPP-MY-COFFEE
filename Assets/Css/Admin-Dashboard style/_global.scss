@@ -469,6 +469,7 @@ $dot-color: rgba(0, 0, 0, 0.466);
 
     .pagination{
         --bs-pagination-focus-box-shadow:0 0 0 0.25rem rgb(0 0 0 / 25%);
+        justify-content: center;
         .paginate_button{
             a{
                 color: black;

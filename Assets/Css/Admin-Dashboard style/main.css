@@ -366,6 +366,7 @@ body.dark .content .table {
 }
 .content .pagination {
   --bs-pagination-focus-box-shadow:0 0 0 0.25rem rgb(0 0 0 / 25%);
+  justify-content: center;
 }
 .content .pagination .paginate_button a {
   color: black;
