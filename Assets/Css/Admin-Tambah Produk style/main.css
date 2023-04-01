@@ -55,19 +55,14 @@ body.dark .sidebar .menu-bar .mode .moon-sun .moon {
 body.dark .content .title {
   color: white !important;
 }
-body.dark .content .dataTables_length label {
+body.dark .content .card .card-header {
+  background-color: grey;
+}
+body.dark .content .card .card-header .card-title {
   color: white;
 }
-body.dark .content .dataTables_filter label {
+body.dark .content .card .card-body .form-group label {
   color: white;
-}
-body.dark .content .dataTables_info {
-  color: white;
-}
-body.dark .content .table {
-  --bs-table-color: white;
-  --bs-table-striped-color: white ;
-  --bs-table-accent-bg:#383838;
 }
 
 .sidebar {
@@ -347,49 +342,22 @@ body.dark .content .table {
   padding-bottom: 30px;
   padding-left: 30px;
 }
-.content .dataTables_filter {
-  text-align: center;
-  padding-right: 25px;
-}
-.content .dataTables_filter label {
-  text-align: left;
-  display: inline-block;
-  white-space: nowrap;
-}
-.content .dataTables_filter input {
-  margin-left: 0.5rem;
-  display: inline-block;
-}
-.content .dataTables_length label {
-  text-align: left;
-  white-space: nowrap;
-}
-.content .dataTables_length label select {
-  display: inline-block;
-}
 .content .title {
   font-weight: 700;
   font-size: 40px;
   letter-spacing: -0.055em;
 }
-.content .table {
-  font-family: "Poppins", sans-serif;
+.content .card {
+  background-color: var(--sidebar-color);
 }
-.content .table tbody tr td img {
-  max-width: 70px;
+.content .card .card-body input {
+  background-color: var(--sidebar-color);
 }
-.content .pagination {
-  --bs-pagination-focus-box-shadow:0 0 0 0.25rem rgb(0 0 0 / 25%);
-  justify-content: center;
+.content .card .card-body textarea {
+  background-color: var(--sidebar-color);
 }
-.content .pagination .paginate_button a {
-  color: black;
-}
-.content .pagination .paginate_button.active a {
-  background-color: black;
-  border: black;
-  color: white;
-  z-index: 1;
+.content .card .card-body select {
+  background-color: var(--sidebar-color);
 }
 
 .header-bg {

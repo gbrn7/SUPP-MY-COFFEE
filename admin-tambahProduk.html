@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   
     <!-- CSS -->
-    <link rel="stylesheet" href="Assets/Css/Admin-Dashboard style/main.css" />
+    <link rel="stylesheet" href="Assets/Css/Admin-Tambah Produk style/main.css" />
 
 </head>
 <body>
@@ -56,13 +56,13 @@
                   <span class="text nav-text">Dashboard</span>
                 </a>
               </li>
-              <li class="nav-link">
+              <li class="nav-link active">
                 <a href="#" class="text-decoration-none text-black">
                   <i class='bx bx-coffee-togo' ></i>
                   <span class="text nav-text">Data Produk</span>
                 </a>
               </li>
-              <li class="nav-link active">
+              <li class="nav-link">
                 <a href="#" class="text-decoration-none text-black">
                   <i class='bx bxs-wallet' ></i>
                   <span class="text nav-text">Data Transaksi</span>
@@ -109,109 +109,50 @@
 
 
   <!-- Content Start-->
-  <section class="content">
-    
-    <p class="text-black title">Data Transaksi</p>
-    <div class="Produk mt-4">
-      <table id="example" class="table table-striped mt-3" style="width:100%">
-        <thead>
-            <tr>
-                <th>ID Transaksi</th>
-                <th>ID User</th>
-                <th>Alamat</th>
-                <th>Total</th>
-                <th>Status Pembayaran</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>01</td>
-                <td>03</td>
-                <td>Jl. Teuku Umar No.7</td>
-                <td>Rp.400000</td>
-                <td>Success</td>
-            </tr>
-            <tr>
-                <td>02</td>
-                <td>03</td>
-                <td>Jl. Teuku Umar No.7</td>
-                <td>Rp.300000</td>
-                <td>Success</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>04</td>
-                <td>Jl. Merpati No.7</td>
-                <td>Rp.500000</td>
-                <td>Success</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>03</td>
-                <td>Jl. Teuku Umar No.7</td>
-                <td>Rp.400000</td>
-                <td>Success</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>03</td>
-                <td>Jl. Teuku Umar No.7</td>
-                <td>Rp.400000</td>
-                <td>Success</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>03</td>
-                <td>Jl. Teuku Umar No.7</td>
-                <td>Rp.400000</td>
-                <td>Success</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>03</td>
-                <td>Jl. Teuku Umar No.7</td>
-                <td>Rp.400000</td>
-                <td>Success</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>03</td>
-                <td>Jl. Teuku Umar No.7</td>
-                <td>Rp.400000</td>
-                <td>Success</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>03</td>
-                <td>Jl. Teuku Umar No.7</td>
-                <td>Rp.400000</td>
-                <td>Success</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>03</td>
-                <td>Jl. Teuku Umar No.7</td>
-                <td>Rp.400000</td>
-                <td>Success</td>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>03</td>
-                <td>Jl. Teuku Umar No.7</td>
-                <td>Rp.400000</td>
-                <td>Success</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th>ID Transaksi</th>
-                <th>ID User</th>
-                <th>Alamat</th>
-                <th>Total</th>
-                <th>Status Pembayaran</th>
-            </tr>
-        </tfoot>
-    </table>
+  <section class="content">    
+    <p class="text-black title mb-2">Data Produk</p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card card-primary">
+            <div class="card-header ">
+              <h5 class="card-title m-0">Tambah Data Produk</h5>
+            </div>
+            <form action="#" method="post">
+              <div class="card-body">
+                <div class="form-group mb-3">
+                  <label for="nama" class="mb-1">Nama</label>
+                  <input class="form-control" type="text" name="nama" id="nama" placeholder="Kopi Robusta 250 gr giling halus">
+                </div>
+                <div class="form-group mb-3">
+                  <label for="deskripsi" class="mb-1">Deskripsi</label>
+                  <textarea class="form-control" type="text" name="deskripsi" id="deskripsi" placeholder="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, blanditiis. Perspiciatis non molestias, ducimus consequuntur nostrum ratione amet nemo quae."></textarea>
+                </div>
+                <div class="form-group mb-3">
+                  <label for="berat" class="mb-1">Berat (gr)</label>
+                  <input class="form-control" type="text" name="berat" id="berat" placeholder="250">
+                </div>
+                <div class="form-group mb-3">
+                  <label for="Harga" class="mb-1">Harga (Rp.)</label>
+                  <input class="form-control" type="text" name="harga" id="harga" placeholder="40000">
+                </div>
+                <div class="form-group mb-3">
+                  <label for="Status" class="mb-1">Status</label>
+                  <select class="form-select status text-secondary" aria-label="Default select example">
+                    <option selected class="text-secondary">Open this select menu</option>
+                    <option value="1" class="text-secondary">Draft</option>
+                    <option value="2" class="text-secondary">Publish</option>
+                  </select>
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- Content End -->

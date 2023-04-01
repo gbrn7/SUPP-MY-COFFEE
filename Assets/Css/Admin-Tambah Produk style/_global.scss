@@ -79,24 +79,22 @@ body.dark{
         .title{
             color: white !important;
         }
-        .dataTables_length{
-            label{
-                color: white;
+        .card{
+            .card-header{
+                background-color: grey;
+                .card-title{
+                    color: white;
+                }
             }
-        }
-        .dataTables_filter{
-            label{
-                color: white;
-            }
-        }
-        .dataTables_info{
-                color: white;
-        }
 
-        .table{
-            --bs-table-color: white;
-            --bs-table-striped-color: white ; 
-            --bs-table-accent-bg:#383838;
+            .card-body{
+                .form-group{
+                    label{
+                        color: white;
+                    }
+
+                }
+            }
         }
     }
 }
@@ -434,67 +432,23 @@ $dot-color: rgba(0, 0, 0, 0.466);
     padding-top: 110px;
     padding-bottom: 30px;
     padding-left: 30px;
-
-    .dataTables_filter{
-        text-align: center;
-        padding-right: 25px;
-
-        label{
-            text-align: left;
-            display: inline-block;
-            white-space: nowrap;
-        }
-
-        input{
-            margin-left: 0.5rem;
-            display: inline-block;
-        }
-    }
-
-    .dataTables_length{
-        label{
-            text-align: left;
-            white-space: nowrap;
-
-            select{
-                display: inline-block;
-            }
-        }
-    }
-
     .title{
         font-weight: map-get($fonts_weights, bold);
         font-size: 40px;
         letter-spacing: -0.055em;
     }
-    .table{
-        font-family: 'Poppins', sans-serif;
-        
-        tbody{
-            tr{
-                td{
-                    img{
-                        max-width: 70px;
-                    }
-                }
-            }
-        }
-    }
 
-    .pagination{
-        --bs-pagination-focus-box-shadow:0 0 0 0.25rem rgb(0 0 0 / 25%);
-        justify-content: center;
-        .paginate_button{
-            a{
-                color: black;
+    .card{
+        background-color: var(--sidebar-color);
+        .card-body{
+            input{
+                background-color: var(--sidebar-color);
             }
-        }
-        .paginate_button.active{
-            a{
-                background-color: black;
-                border: black;
-                color: white;
-                z-index: 1;
+            textarea{
+                background-color: var(--sidebar-color);
+            }
+            select{
+                background-color: var(--sidebar-color);
             }
         }
     }
