@@ -436,9 +436,6 @@ body::-webkit-scrollbar {
     font-size: 12px;
   }
 }
-.history .history-wrapper .text-wrapper .bb {
-  border-bottom: 1px solid black;
-}
 @media (max-width: 991.98px) {
   .history .history-wrapper .row-2 .title {
     font-size: 12px;
