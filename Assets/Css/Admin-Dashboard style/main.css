@@ -263,6 +263,9 @@ body.dark .content .table {
   border-radius: 10px;
   background-color: white;
 }
+.sidebar.close .menu-bar .menu .bottom-content {
+  padding-bottom: 20px;
+}
 .sidebar.close .menu-bar .menu .bottom-content ul {
   margin: 0;
   padding-left: 0;

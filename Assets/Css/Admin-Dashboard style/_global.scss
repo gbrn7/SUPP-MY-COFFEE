@@ -304,6 +304,7 @@ $dot-color: rgba(0, 0, 0, 0.466);
                 padding-left: 0;
                 margin-left: 3px;
 
+
                 li{
                     a{
                         justify-content: center;
@@ -311,7 +312,6 @@ $dot-color: rgba(0, 0, 0, 0.466);
                         position: relative;
                         .text{
                             display: none;
-
                         }
 
                     }
@@ -329,19 +329,22 @@ $dot-color: rgba(0, 0, 0, 0.466);
             }
 
             .bottom-content{
+                padding-bottom: 20px;
                     ul{
                         margin: 0;
                         padding-left: 0;
-                        li{
+                                li{
                             a{
                                 justify-content: center;
                                 position: relative;
                                 .text{
                                     display: none;
+
                                 }
                             }
                         }
                         li:hover{
+
                             .text{
                                 display : block;
                                 position: absolute;
@@ -365,7 +368,7 @@ $dot-color: rgba(0, 0, 0, 0.466);
                         }
                         .text{
                             display: none;
-                            color: black;
+                            color: black; 
                         }
                     }
                     .mode:hover{

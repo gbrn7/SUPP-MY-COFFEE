@@ -147,15 +147,15 @@ th.addEventListener('click', () => {
     });
   }
 })
-th2.addEventListener('click', () => {
-  if (!row1.classList.contains('d-none')) {
-    row1.classList.add('d-none');
-    row2.classList.remove('d-none');
-    z.forEach((x) => {
-      x.classList.toggle('bb')
-    });
-  }
-})
+// th2.addEventListener('click', () => {
+//   if (!row1.classList.contains('d-none')) {
+//     row1.classList.add('d-none');
+//     row2.classList.remove('d-none');
+//     z.forEach((x) => {
+//       x.classList.toggle('bb')
+//     });
+//   }
+// })
 
 
 const cb = document.querySelector(".checkbox");

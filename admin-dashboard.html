@@ -25,12 +25,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   
     <!-- CSS -->
-    <link rel="stylesheet" href="Assets/Css/Admin-Tambah Produk style/main.css" />
+    <link rel="stylesheet" href="Assets/Css/Admin-Dashboard style/main.css" />
 
 </head>
-<body>
+<body class="vh-100">
     <div class="header-bg position-absolute"></div>
-  <!-- sidebar start -->
+  <!-- sidebar Start -->
       <nav class="sidebar close">
         <header class="d-flex gap-2 align-items-center">
           <div class="image-text">
@@ -50,13 +50,13 @@
         <div class="menu-bar h-100 d-flex justify-content-between flex-column">
           <div class="menu d-flex flex-column h-100 justify-content-between"> 
             <ul class="menu-links d-flex flex-column gap-2">
-              <li class="nav-link">
+              <li class="nav-link active">
                 <a href="#" class="text-decoration-none text-black">
                   <i class='bx bx-home' ></i>
                   <span class="text nav-text">Dashboard</span>
                 </a>
               </li>
-              <li class="nav-link active">
+              <li class="nav-link">
                 <a href="#" class="text-decoration-none text-black">
                   <i class='bx bx-coffee-togo' ></i>
                   <span class="text nav-text">Data Produk</span>
@@ -109,53 +109,21 @@
 
 
   <!-- Content Start-->
-  <section class="content">    
-    <p class="text-black title mb-2">Data Produk</p>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="card card-primary">
-            <div class="card-header ">
-              <h5 class="card-title m-0">Tambah Data Produk</h5>
+  <section class="content h-100">
+    <div class="container container-fluid m-0 h-100">
+        <div class="row justify-content-start h-100 ">
+            <div class="col-6 text-center ">
+                <img src="Assets/img/Logo.png" class="img-fluid rounded-4">   
+                <p class="m-0 title d-inline-block ms-3">Dashboard</p>
             </div>
-            <form action="#" method="post">
-              <div class="card-body">
-                <div class="form-group mb-3">
-                  <label for="nama" class="mb-1">Nama</label>
-                  <input class="form-control" type="text" name="nama" id="nama" placeholder="Kopi Robusta 250 gr giling halus">
-                </div>
-                <div class="form-group mb-3">
-                  <label for="deskripsi" class="mb-1">Deskripsi</label>
-                  <textarea class="form-control" type="text" name="deskripsi" id="deskripsi" placeholder="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, blanditiis. Perspiciatis non molestias, ducimus consequuntur nostrum ratione amet nemo quae."></textarea>
-                </div>
-                <div class="form-group mb-3">
-                  <label for="berat" class="mb-1">Berat (gr)</label>
-                  <input class="form-control" type="text" name="berat" id="berat" placeholder="250">
-                </div>
-                <div class="form-group mb-3">
-                  <label for="Harga" class="mb-1">Harga (Rp.)</label>
-                  <input class="form-control" type="text" name="harga" id="harga" placeholder="40000">
-                </div>
-                <div class="form-group mb-3">
-                  <label for="Status" class="mb-1">Status</label>
-                  <select class="form-select status text-secondary" aria-label="Default select example">
-                    <option selected class="text-secondary">Open this select menu</option>
-                    <option value="1" class="text-secondary">Draft</option>
-                    <option value="2" class="text-secondary">Publish</option>
-                  </select>
-                </div>
-
-              </div>
-              <div class="card-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
-            </form>
-          </div>
         </div>
-      </div>
+        <div class="row">
+            
+        </div>
     </div>
   </section>
   <!-- Content End -->
+
 </body>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -167,7 +135,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
-
 
   <!-- Main Js -->
   <script src="Assets/Js/Admin-Dashboard script/script.js"></script>
