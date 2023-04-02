@@ -28,16 +28,101 @@
   <link rel="stylesheet" href="Assets/Css/Subscribe style/main.css" />
 
 </head>
-<body class="vh-100">
+<body class="vh-100 d-flex flex-column justify-content-between">
+
+    <!-- Navbar Start -->
+    <nav class="navbar  bg-white navbar-expand-lg navbar-light ">
+        <div class="container py-1 d-lg-flex align-items-lg-center">
+          <a href="#" class="text-decoration-none">
+            <img src="Assets/img/Logo.png" class="logo" />
+          </a>
+      </nav>
+    <!-- Navbar End -->
 
   <!-- Content Start -->
-  <section class="content">
+  <section class="content mt-3 mt-lg-0">
     <div class="container">
-        <div class="row row-1">
+        <div class="row row-high d-none">
             <div class="col-10">
-                <input type="checkbox" class="checkbox ri-checkbox-blank-circle-line">
+                <label for="">Provinsi</label>
+                <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
+                    <option selected>Pilih Provinsi</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+            </div>
+            <div class="col-10">
+                <label for="">Kabupaten</label>
+                <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
+                    <option selected>Pilih Kabupaten</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+            </div>
+            <div class="col-10">
+                <label for="">Kecamatan</label>
+                <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
+                    <option selected>Pilih Kecamatan</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+            </div>
+            <div class="col-10">
+                    <label for="exampleFormControlInput1" class="">Alamat</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Jl. Mawar No.8 Desa Sukasari">
             </div>
         </div>
+        <div class="row row-1 mt-3">
+            <form action="#" method="get">
+            <div class="col-10">
+                    <div class="form-check once">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                        <label class="form-check-label" for="flexRadioDefault1">Beli Sekali</label>
+                      </div>
+                      <div class="form-check ">
+                        <input class="form-check-input subs" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">Berlangganan</label>
+                      </div>
+            </div>
+        </div>
+        <div class="row row-2 mt-3 d-none">
+            <div class="mb-3 col-4 col-lg-2">
+                <label for="date-selector" class="form-label">Setiap Tanggal</label>
+                <select class="form-select date-selector tanggal" id="date-selector" aria-label="Default select example">
+                  </select>
+            </div>
+            <div class="col-5 col-lg-3">
+                <label for="date-selector" class="form-label">Selama</label>
+                <div class="range-wrapper d-flex gap-2 gap-md-3 align-items-center">
+                    <div class="col-7 range d-flex justify-content-between ">
+                        <div class="minus d-inline-block" class="col-4">-</div>
+                        <input type="text"  value="2"  class="col-8 qty-input">
+                        <div class="plus d-inline-block"  class="col-4">+</div>
+                    </div>
+                    <p class="mb-0 d-inline-block">Bulan Kedepan</p>
+                </div>
+            </div>
+            <div class="col-3 d-flex align-items-center">
+                <div class="col-12 col-lg-6 btn btn-outline-dark confirm">Konfirmasi</div>
+            </div>
+        </div>
+        <div class="row row-3 d-none">
+            <div class="col-5 col-md-3 date-col d-none">
+                <div class="date-wrapper">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row row-4 mt-4 align-items-center">
+            <div class="col-12 col-lg-10 d-flex justify-content-between">
+                <div class="col-7 text-wrapper">*Pengiriman pertama mungkin terlambat 2-3 hari</div>
+                <button type="submit" class="col-3 col-lg-2 btn btn-dark d-flex justify-content-center align-items-center">Checkout</button>
+            </div>
+        </div>
+    </form>
     </div>
   </section>
   <!-- Content End -->
@@ -100,4 +185,6 @@
   </section>
   <!-- Footer End -->
 </body>
+  <!-- Main Js -->
+  <script src="Assets/Js/Subscribe script/script.js"></script>
 </html>

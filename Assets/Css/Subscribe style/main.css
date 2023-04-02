@@ -59,6 +59,113 @@ body::-webkit-scrollbar {
   border: none;
 }
 
+.content .container .form-check .form-check-input:checked {
+  background-color: black;
+  border-color: black;
+}
+.content .container .form-check .form-check-input {
+  cursor: pointer;
+}
+.content .container .form-check .form-check-label {
+  cursor: pointer;
+}
+@media (max-width: 991.98px) {
+  .content .container .row-1 .form-check label {
+    font-size: 12px;
+  }
+}
+@media (max-width: 991.98px) {
+  .content .container .row-2 label {
+    font-size: 12px;
+  }
+}
+@media (max-width: 991.98px) {
+  .content .container .row-2 select {
+    font-size: 12px;
+  }
+}
+@media (max-width: 991.98px) {
+  .content .container .row-2 select option {
+    font-size: 12px;
+  }
+}
+.content .container .row-2 .range-wrapper .range {
+  border: 1px solid #ced4da;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 0.375rem;
+}
+@media (max-width: 991.98px) {
+  .content .container .row-2 .range-wrapper .range {
+    font-size: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+.content .container .row-2 .range-wrapper .range .minus {
+  cursor: pointer;
+}
+.content .container .row-2 .range-wrapper .range .plus {
+  cursor: pointer;
+}
+.content .container .row-2 .range-wrapper .range .qty-input {
+  border: none;
+  text-align: center;
+}
+@media (max-width: 991.98px) {
+  .content .container .row-2 .range-wrapper p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767.98px) {
+  .content .container .row-2 .range-wrapper p {
+    font-size: 7px;
+    white-space: nowrap;
+  }
+}
+.content .container .row-2 .text-wrapper p {
+  padding: 0.375rem 0 0.375rem 0;
+}
+@media (max-width: 991.98px) {
+  .content .container .row-2 .text-wrapper p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 991.98px) {
+  .content .container .row-2 .btn {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767.98px) {
+  .content .container .row-2 .btn {
+    font-size: 7px;
+  }
+}
+.content .container .row-3 .date-wrapper {
+  height: 85px;
+  overflow-y: auto;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+  padding: 5px 12px 5px 12px;
+}
+@media (max-width: 991.98px) {
+  .content .container .row-3 .date-wrapper {
+    font-size: 12px;
+  }
+}
+@media (max-width: 991.98px) {
+  .content .container .row-4 .text-wrapper {
+    font-size: 12px;
+  }
+}
+@media (max-width: 991.98px) {
+  .content .container .row-4 .btn {
+    font-size: 12px;
+  }
+}
+
 .footer .footer-wrapper .link-wrap .head {
   font-size: 18px;
   letter-spacing: -0.07em;

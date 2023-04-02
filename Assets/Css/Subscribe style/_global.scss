@@ -12,6 +12,7 @@ body::-webkit-scrollbar {
 // Colors
 $bg-color: rgb(255, 255, 255);
 $dot-color: rgba(0, 0, 0, 0.466);
+
 .navbar {
     .container {
         .logo {
@@ -65,6 +66,128 @@ $dot-color: rgba(0, 0, 0, 0.466);
     }
 }
 
+.content{
+    .container{
+        .form-check{
+            .form-check-input:checked{
+                background-color: black;
+                border-color: black;
+            }
+            .form-check-input{
+                cursor: pointer;
+            }
+            .form-check-label{
+                cursor: pointer;
+            }
+        }
+
+        .row-1{
+            .form-check{
+                label{
+                    @include media-breakpoint-down(lg) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .row-2{
+            label{
+                @include media-breakpoint-down(lg) {
+                    font-size: 12px;
+                }
+            }
+
+            select{
+                @include media-breakpoint-down(lg) {
+                    font-size: 12px;
+                }
+                option{
+                    @include media-breakpoint-down(lg) {
+                        font-size: 12px;
+                    }
+                }
+            }
+            .range-wrapper{
+                .range{
+                    border: 1px solid #ced4da;
+                    padding-top: 0.375rem;
+                    padding-bottom: 0.375rem;
+                    padding-right: 20px;
+                    padding-left: 20px;
+                    border-radius: 0.375rem;
+                    @include media-breakpoint-down(lg) {
+                        font-size: 12px;
+                        padding-right: 10px;
+                        padding-left: 10px;
+                    }
+    
+                    .minus{
+                        cursor: pointer;
+                    }
+                    .plus{
+                        cursor: pointer;
+                    }
+    
+                    .qty-input{
+                        border: none;
+                        text-align: center;
+                    }
+                }
+                p{
+                    @include media-breakpoint-down(lg) {
+                        font-size: 12px;
+                    }
+                    @include media-breakpoint-down(md) {
+                        font-size: 7px;
+                        white-space: nowrap;
+                    }
+                }
+            }
+            .text-wrapper{
+                p{
+                    padding: 0.375rem 0 0.375rem 0;
+                    @include media-breakpoint-down(lg) {
+                        font-size: 12px;
+                    }
+                }
+            }
+            .btn{
+                @include media-breakpoint-down(lg) {
+                    font-size: 12px;
+                }
+                @include media-breakpoint-down(md) {
+                    font-size: 7px;
+                }
+            }
+        }
+        .row-3{
+            .date-wrapper{
+                height: 85px;
+                overflow-y: auto;
+                border: 1px solid #ced4da;
+                border-radius: 0.375rem;
+                padding: 5px 12px 5px 12px ;
+                @include media-breakpoint-down(lg) {
+                    font-size: 12px;
+                }
+            }
+        }
+        .row-4{
+            .text-wrapper{
+                @include media-breakpoint-down(lg) {
+                    font-size: 12px;
+                }
+            }
+            .btn{
+                @include media-breakpoint-down(lg) {
+                    font-size: 12px;
+                }
+
+            }
+        }
+    }
+}
 
 .footer{
     .footer-wrapper{
