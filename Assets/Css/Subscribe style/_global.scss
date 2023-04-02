@@ -1,0 +1,94 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    transition: .5s all ease;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+// Colors
+$bg-color: rgb(255, 255, 255);
+$dot-color: rgba(0, 0, 0, 0.466);
+.navbar {
+    .container {
+        .logo {
+            border-radius: 10px;
+            max-width: 86px;
+        }
+        .toggle {
+            @include media-breakpoint-down(lg) {
+                background-color: whitesmoke;
+                border-radius: 10px;
+            }
+            .nav-item {
+                position: relative;
+                .nav-link {
+                    font-weight: map-get($fonts_weights, light);
+                    color: $black_color;
+                    font-size: 17px;
+                    letter-spacing: -0.02em;
+                    text-transform: capitalize;
+                }
+            }
+            .nav-link-active::before {
+                content: "";
+                color: black;
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 5%;
+                background-color: black;
+            }
+            .btn-login {
+                font-weight: map-get($fonts_weights, semiBold);
+                font-size: 20px;
+                color: white;
+                padding: 3px 29px;
+                background-color: #58311C;
+                border: none;
+            }
+        }
+        .btn-login {
+            font-weight: map-get($fonts_weights, semiBold);
+            font-size: 20px;
+            color: white;
+            padding: 3px 29px;
+            background-color: #58311C;
+            border: none;
+        }
+    }
+}
+
+
+.footer{
+    .footer-wrapper{
+        .link-wrap{
+            .head{
+                font-size: 18px;
+                letter-spacing: -0.07em;
+                text-transform: capitalize;
+                font-weight: map-get($fonts_weights, medium);
+
+                @include media-breakpoint-down(lg){
+                    font-size: 15px;
+                }
+            }
+            .child{
+                font-size: 16px;
+                letter-spacing: -0.07em;
+                text-transform: capitalize;
+                font-weight: map-get($fonts_weights, light);
+                
+                @include media-breakpoint-down(lg){
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
