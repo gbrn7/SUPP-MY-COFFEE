@@ -67,11 +67,29 @@
 
   letter-spacing: -0.05em;
 }
+
+@media (max-width: 575.98px){
+  .row-1 .slip .text-wrap {
+    font-size: 20px;  
+
+  }
+}
+
+
 .row-1 .slip .title-wrapper .judul {
   margin-bottom: 0;
   font-weight: 600;
   font-size: 18px;
 }
+
+@media (max-width: 575.98px){
+  .row-1 .slip .text-wrap {
+    font-size: 14px;  
+
+  }
+}
+
+
 .row-1 .slip .title-wrapper .deskripsi {
   margin-bottom: 0;
   font-weight: 275;
@@ -82,10 +100,19 @@ section.content {
 
   margin-bottom: 100px;
 }
+
+
+
 .row-1 .slip .tagihan{
   font-weight: 600;
 font-size: 18px;
 letter-spacing: -0.05em;
+}
+
+@media (max-width: 575.98px){
+  .row-1 .slip .harga-tagihan {
+    font-size: 16px;  
+  }
 }
 
 .row-1 .slip .tagihan-wrap{
@@ -97,11 +124,31 @@ letter-spacing: -0.05em;
 font-size: 18px;
 letter-spacing: -0.05em;
 }
+
+@media (max-width: 575.98px){
+  .row-1 .slip .harga-tagihan {
+    font-size: 17px;  
+  }
+}
+
 .row-1 .text-wrapper {
   font-weight: 600;
   font-size: 23px;
 
   letter-spacing: -0.075em;
+}
+
+@media (max-width: 575.98px){
+  .row-1 .text-wrapper {
+    font-size: 18px;  
+
+  }
+}
+
+@media (max-width: 575.98px){
+  .row-1 .slip .detail {
+    font-size: 13px;  
+  }
 }
 
 .row-1 .slip .button-checkout{
@@ -114,8 +161,24 @@ letter-spacing: -0.05em;
   border-radius: 8px;
   font-weight: 600;
 font-size: 16px;
-
 }
+
+@media (max-width: 575.98px){
+  .row-1 .slip .button-checkout {
+    font-size: 13px;  
+  }
+}
+
+.left-content{
+  max-height: 668px;
+  overflow-y: auto;
+}
+
+.right-content{
+  max-height: 668px;
+  overflow-y: auto;
+}
+
 .produk-wrap {
   margin-top: 26px;
 }
@@ -598,3 +661,4 @@ font-size: 16px;
     font-size: 12px;
   }
 } /*# sourceMappingURL=main.css.map */
+
