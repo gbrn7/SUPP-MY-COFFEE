@@ -347,7 +347,7 @@ body.dark .content .table {
   position: relative;
   left: 240px;
   padding-top: 110px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   padding-left: 30px;
 }
 .content .dataTables_filter {
@@ -378,6 +378,9 @@ body.dark .content .table {
 .content .table {
   font-family: "Poppins", sans-serif;
 }
+.content .table tbody tr td {
+  font-size: 15px;
+}
 .content .table tbody tr td img {
   max-width: 70px;
 }
@@ -385,14 +388,17 @@ body.dark .content .table {
   --bs-pagination-focus-box-shadow:0 0 0 0.25rem rgb(0 0 0 / 25%);
   justify-content: center;
 }
+.content .pagination .paginate_button {
+  border-color: white;
+}
 .content .pagination .paginate_button a {
   color: black;
 }
 .content .pagination .paginate_button.active a {
   background-color: black;
-  border: black;
   color: white;
   z-index: 1;
+  border-color: white;
 }
 
 .header-bg {

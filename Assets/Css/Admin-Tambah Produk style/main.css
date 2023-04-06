@@ -64,6 +64,18 @@ body.dark .content .card .card-header .card-title {
 body.dark .content .card .card-body .form-group label {
   color: white;
 }
+body.dark .content .card .card-body .form-file {
+  color: white;
+}
+body.dark .content .card .card-body input {
+  color: white;
+}
+body.dark .content .card .card-body textarea {
+  color: white;
+}
+body.dark .content .card .card-body select {
+  color: white;
+}
 
 .sidebar {
   position: fixed;

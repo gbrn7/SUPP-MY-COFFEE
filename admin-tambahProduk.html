@@ -28,10 +28,10 @@
     <link rel="stylesheet" href="Assets/Css/Admin-Tambah Produk style/main.css" />
 
 </head>
-<body>
+<body class="dark">
     <div class="header-bg position-absolute"></div>
   <!-- sidebar start -->
-      <nav class="sidebar close">
+      <nav class="sidebar">
         <header class="d-flex gap-2 align-items-center">
           <div class="image-text">
             <span class="image">
@@ -113,7 +113,7 @@
     <p class="text-black title mb-2">Data Produk</p>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-10">
           <div class="card card-primary">
             <div class="card-header ">
               <h5 class="card-title m-0">Tambah Data Produk</h5>
@@ -123,6 +123,12 @@
                 <div class="form-group mb-3">
                   <label for="nama" class="mb-1">Nama</label>
                   <input class="form-control" type="text" name="nama" id="nama" placeholder="Kopi Robusta 250 gr giling halus">
+                </div>
+                <div class="form-file">
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label card-title">Foto Produk</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
                 </div>
                 <div class="form-group mb-3">
                   <label for="deskripsi" class="mb-1">Deskripsi</label>

@@ -5,11 +5,13 @@ const modeSwitch = body.querySelector(".toggle-switch");
 const modeText = document.querySelector(".mode-text");
 const switchh = document.querySelector(".switch");
 const aturPengiriman = document.querySelectorAll(".btn-atur");
-console.log(aturPengiriman);
+const produk = document.querySelector(".Produk");
+
 
 
 toggle.addEventListener("click", () => {
   sidebar.classList.toggle("close");
+  produk.classList.toggle("col-11");
 });
 
 modeSwitch.addEventListener("click", () => {

@@ -76,6 +76,7 @@ body.dark{
     }
 
     .content{
+        // width: 1380px;
         .title{
             color: white !important;
         }
@@ -435,7 +436,7 @@ $dot-color: rgba(0, 0, 0, 0.466);
     position: relative;
     left: 240px;
     padding-top: 110px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     padding-left: 30px;
 
     .dataTables_filter{
@@ -474,8 +475,14 @@ $dot-color: rgba(0, 0, 0, 0.466);
         font-family: 'Poppins', sans-serif;
         
         tbody{
+
             tr{
+                // font-size: 12px;
+
                 td{
+                    font-size: 15px;
+                    // max-width: 50px;
+                    // min-width: 50px;
                     img{
                         max-width: 70px;
                     }
@@ -488,6 +495,7 @@ $dot-color: rgba(0, 0, 0, 0.466);
         --bs-pagination-focus-box-shadow:0 0 0 0.25rem rgb(0 0 0 / 25%);
         justify-content: center;
         .paginate_button{
+            border-color: white;
             a{
                 color: black;
             }
@@ -495,9 +503,10 @@ $dot-color: rgba(0, 0, 0, 0.466);
         .paginate_button.active{
             a{
                 background-color: black;
-                border: black;
+                // border: black;
                 color: white;
                 z-index: 1;
+                border-color: white;
             }
         }
     }

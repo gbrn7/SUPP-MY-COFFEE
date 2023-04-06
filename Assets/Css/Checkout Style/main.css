@@ -8,6 +8,24 @@
   list-style: none;
 }
 
+body::-webkit-scrollbar{
+  width: 10px;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;  
+
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 10px;
+  width: 5px;
+}
+
 .icon-obk {
   display: flex;
   flex-direction: row;
@@ -172,11 +190,38 @@ font-size: 16px;
 .left-content{
   max-height: 668px;
   overflow-y: auto;
+  /* border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px; */
+}
+
+.left-content::-webkit-scrollbar{
+  width: 5px;
+  border-radius: 10px;
+}
+
+.left-content::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;  
+
+}
+
+.left-content::-webkit-scrollbar-thumb{
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 10px;
+  width: 5px;
 }
 
 .right-content{
   max-height: 668px;
   overflow-y: auto;
+}
+.bg{
+  background: url(../../img/bg-ctlg-footer.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 650px;
 }
 
 .produk-wrap {
