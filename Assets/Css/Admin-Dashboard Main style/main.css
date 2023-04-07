@@ -56,25 +56,44 @@ body.dark .sidebar .menu-bar .mode .moon-sun .moon {
 body.dark .content .title {
   color: white !important;
 }
-body.dark .content .card .card-header {
-  background-color: grey;
+body.dark .content .table {
+  --bs-table-color: white;
+  --bs-table-striped-color: white ;
+  --bs-table-accent-bg:#383838;
 }
-body.dark .content .card .card-header .card-title {
+body.dark .content .row .card .head {
   color: white;
 }
-body.dark .content .card .card-body .form-group label {
+body.dark .content .row .card .content-text {
   color: white;
 }
-body.dark .content .card .card-body .form-file {
-  color: white;
+body.dark .content .row .card-1 {
+  background: url("../../img/layer-1-dark.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-body.dark .content .card .card-body input {
-  color: white;
+body.dark .content .row .card-2 {
+  background: url("../../img/layer-2-dark.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-body.dark .content .card .card-body textarea {
-  color: white;
+body.dark .content .row .card-3 {
+  background: url("../../img/layer-3-dark.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-body.dark .content .card .card-body select {
+body.dark .content .row-3 .table-wrapper {
+  background-color: #242526 !important;
+}
+body.dark .content .row-3 .table-wrapper p {
+  color: white;
+  border-color: white;
+}
+body.dark .content .row-4 .table-wrapper {
+  background-color: #242526 !important;
+}
+body.dark .content .row-4 .table-wrapper p {
+  border-color: white;
   color: white;
 }
 
@@ -271,6 +290,9 @@ body.dark .content .card .card-body select {
   border-radius: 10px;
   background-color: white;
 }
+.sidebar.close .menu-bar .menu .bottom-content {
+  padding-bottom: 20px;
+}
 .sidebar.close .menu-bar .menu .bottom-content ul {
   margin: 0;
   padding-left: 0;
@@ -437,25 +459,134 @@ body.dark .content .card .card-body select {
   position: relative;
   left: 240px;
   padding-top: 110px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   padding-left: 30px;
 }
-.content .title {
+.content .row-1 .title {
   font-weight: 700;
   font-size: 40px;
   letter-spacing: -0.055em;
 }
-.content .card {
-  background-color: var(--sidebar-color);
+@media (max-width: 991.98px) {
+  .content .row-1 .title {
+    font-size: 30px;
+  }
 }
-.content .card .card-body input {
-  background-color: var(--sidebar-color);
+@media (max-width: 991.98px) {
+  .content .table {
+    font-size: 12px;
+  }
 }
-.content .card .card-body textarea {
-  background-color: var(--sidebar-color);
+.content .row-2 .card-1 {
+  background: url(../../img/layer-1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.content .card .card-body select {
-  background-color: var(--sidebar-color);
+.content .row-2 .card-1 .head i {
+  background-color: rgb(255, 240, 240) !important;
+}
+.content .row-2 .card-1 .head span {
+  letter-spacing: -0.04em;
+  font-size: 15px;
+}
+@media (max-width: 991.98px) {
+  .content .row-2 .card-1 .head {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767.98px) {
+  .content .row-2 .card-1 .head {
+    font-size: 10px;
+  }
+}
+.content .row-2 .card-1 .content-text p {
+  font-size: 28px;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+}
+@media (max-width: 991.98px) {
+  .content .row-2 .card-1 .content-text p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .content .row-2 .card-1 .content-text p {
+    font-size: 17px;
+  }
+}
+.content .row-2 .card-2 {
+  background: url(../../img/layer-2.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content .row-2 .card-2 .head i {
+  background-color: #EDF1D6 !important;
+}
+.content .row-2 .card-2 .head span {
+  letter-spacing: -0.04em;
+  font-size: 15px;
+}
+@media (max-width: 991.98px) {
+  .content .row-2 .card-2 .head span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767.98px) {
+  .content .row-2 .card-2 .head span {
+    font-size: 10px;
+  }
+}
+.content .row-2 .card-2 .content-text p {
+  font-size: 28px;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+}
+@media (max-width: 991.98px) {
+  .content .row-2 .card-2 .content-text p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .content .row-2 .card-2 .content-text p {
+    font-size: 17px;
+  }
+}
+.content .row-2 .card-3 {
+  background: url(../../img/layer-3.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content .row-2 .card-3 .head i {
+  background-color: rgb(182, 231, 253);
+}
+.content .row-2 .card-3 .head span {
+  letter-spacing: -0.04em;
+  font-size: 15px;
+}
+@media (max-width: 991.98px) {
+  .content .row-2 .card-3 .head span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767.98px) {
+  .content .row-2 .card-3 .head span {
+    font-size: 10px;
+  }
+}
+.content .row-2 .card-3 .content-text p {
+  font-size: 28px;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+}
+@media (max-width: 991.98px) {
+  .content .row-2 .card-3 .content-text p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .content .row-2 .card-3 .content-text p {
+    font-size: 17px;
+  }
 }
 
 .header-bg {

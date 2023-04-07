@@ -29,8 +29,27 @@
 
 </head>
 <body class="dark">
-    <div class="header-bg position-absolute"></div>
-  <!-- sidebar Start -->
+
+  <!-- Pre Load Start -->
+  <div class="loading-wrapper h-100 w-100 position-absolute bg-black d-flex justify-content-center align-items-center top-0 ">
+    <div class="jelly-triangle">
+      <div class="jelly-triangle__dot"></div>
+      <div class="jelly-triangle__traveler"></div>
+  </div>
+  
+  <svg width="0" height="0" class="jelly-maker">
+      <defs>
+          <filter id="uib-jelly-triangle-ooze">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="7.3" result="blur"></feGaussianBlur>
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="ooze"></feColorMatrix>
+              <feBlend in="SourceGraphic" in2="ooze"></feBlend>
+          </filter>
+      </defs>
+  </svg>
+  </div>
+  <!-- Pre Load End -->
+
+    <!-- sidebar Start -->
       <nav class="sidebar">
         <header class="d-flex gap-2 align-items-center">
           <div class="image-text">
@@ -100,6 +119,10 @@
         </div>
       </nav>
   <!-- sidebar End -->
+
+  <!-- Header Bg Start -->
+  <div class="header-bg position-absolute d-none"></div>
+  <!-- Header Bg End -->
 
   <!-- Footer Start -->
   <div class="footer-wrapper fixed-bottom text-secondary">
@@ -338,7 +361,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Id Produk</th>
+                <th>ID Produk</th>
                 <th>Foto</th>
                 <th>Nama Produk</th>
                 <th>Status</th>

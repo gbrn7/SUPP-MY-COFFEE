@@ -75,23 +75,11 @@ body.dark{
         }
     }
 
+
     .content{
         // width: 1380px;
         .title{
             color: white !important;
-        }
-        .dataTables_length{
-            label{
-                color: white;
-            }
-        }
-        .dataTables_filter{
-            label{
-                color: white;
-            }
-        }
-        .dataTables_info{
-                color: white;
         }
 
         .table{
@@ -99,7 +87,54 @@ body.dark{
             --bs-table-striped-color: white ; 
             --bs-table-accent-bg:#383838;
         }
+
+        .row{
+                .card{
+                    .head{
+                        color: white;
+                    }
+                    .content-text{
+                        color: white;
+                    }
+                }
+                .card-1{
+                    background: url('../../img/layer-1-dark.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .card-2{
+                    background: url('../../img/layer-2-dark.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .card-3{
+                    background: url('../../img/layer-3-dark.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+        }
+
+        .row-3{
+            .table-wrapper{
+                background-color: #242526 !important;
+                p{
+                    color: white;
+                    border-color: white;
+                }
+            }
+        }
+        
+        .row-4{
+            .table-wrapper{
+                background-color: #242526 !important;
+                p{
+                    border-color: white;
+                    color: white;
+                }
+        }
+    
     }
+}
 }
 
 
@@ -412,20 +447,6 @@ $dot-color: rgba(0, 0, 0, 0.466);
     }
 }
 
-
-.sidebar.close ~ .content{
-    width: calc(100% - 78px);
-    left: 78px ;
-}
-
-.sidebar.close ~ .footer-wrapper{
-    left: 78px;
-}
-
-.sidebar.close ~ .header-bg{
-    left: 78px;
-}
-
 .loading-wrapper{
     -webkit-clip-path: circle(70.7% at 50% 50%);
     clip-path: circle(70.7% at 50% 50%);
@@ -524,6 +545,21 @@ $dot-color: rgba(0, 0, 0, 0.466);
 
 }
 
+
+.sidebar.close ~ .content{
+    width: calc(100% - 78px);
+    left: 78px ;
+}
+
+.sidebar.close ~ .footer-wrapper{
+    left: 78px;
+}
+
+.sidebar.close ~ .header-bg{
+    left: 78px;
+}
+
+
 .footer-wrapper{
     left: 240px;
     background-color: var(--sidebar-color);
@@ -540,78 +576,128 @@ $dot-color: rgba(0, 0, 0, 0.466);
     padding-top: 110px;
     padding-bottom: 40px;
     padding-left: 30px;
-
-    .dataTables_filter{
-        text-align: center;
-        padding-right: 25px;
-
-        label{
-            text-align: left;
-            display: inline-block;
-            white-space: nowrap;
-        }
-
-        input{
-            margin-left: 0.5rem;
-            display: inline-block;
-        }
-    }
-
-    .dataTables_length{
-        label{
-            text-align: left;
-            white-space: nowrap;
-
-            select{
-                display: inline-block;
-            }
-        }
-    }
-
+    .row-1{
     .title{
         font-weight: map-get($fonts_weights, bold);
         font-size: 40px;
         letter-spacing: -0.055em;
+        @include media-breakpoint-down(lg){
+            font-size: 30px;
+        }
+        }
     }
+
     .table{
-        font-family: 'Poppins', sans-serif;
-        
-        tbody{
+        @include media-breakpoint-down(lg){
+            font-size: 12px;
+        }
+    }
 
-            tr{
-                // font-size: 12px;
-
-                td{
+    .row-2{
+        .card-1{
+            background: url(../../img/layer-1.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            .head{
+                // background-color: teal;
+                i{
+                    background-color: rgb(255, 240, 240) !important;
+                }
+                span{
+                    letter-spacing: -0.04em;
                     font-size: 15px;
-                    // max-width: 50px;
-                    // min-width: 50px;
-                    img{
-                        max-width: 70px;
+                }
+                @include media-breakpoint-down(lg){
+                    font-size: 12px;
+                }
+                @include media-breakpoint-down(md){
+                    font-size: 10px;
+                }
+            }
+            .content-text{
+                p{
+                    font-size: 28px;
+                    letter-spacing: -0.04em;
+                    font-weight: map-get($fonts_weights, semiBold);
+                    @include media-breakpoint-down(lg){
+                        font-size: 20px;
+                    }
+                    @include media-breakpoint-down(md){
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+        .card-2{
+            background: url(../../img/layer-2.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            .head{
+                // background-color: teal;
+                i{
+                    background-color: #EDF1D6 !important;
+                }
+                span{
+                    letter-spacing: -0.04em;
+                    font-size: 15px;
+                    @include media-breakpoint-down(lg){
+                        font-size: 12px;
+                    }
+                    @include media-breakpoint-down(md){
+                        font-size: 10px;
+                    }
+                }
+            }
+            .content-text{
+                p{
+                    font-size: 28px;
+                    letter-spacing: -0.04em;
+                    font-weight: map-get($fonts_weights, semiBold);
+                    @include media-breakpoint-down(lg){
+                        font-size: 20px;
+                    }
+                    @include media-breakpoint-down(md){
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+        .card-3 {
+            background: url(../../img/layer-3.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            .head{
+                // background-color: teal;
+                i{
+                    background-color: rgb(182, 231, 253);
+                }
+                span{
+                    letter-spacing: -0.04em;
+                    font-size: 15px;
+                    @include media-breakpoint-down(lg){
+                        font-size: 12px;
+                    }
+                    @include media-breakpoint-down(md){
+                        font-size: 10px;
+                    }
+                }
+            }
+            .content-text{
+                p{
+                    font-size: 28px;
+                    letter-spacing: -0.04em;
+                    font-weight: map-get($fonts_weights, semiBold);
+                    @include media-breakpoint-down(lg){
+                        font-size: 20px;
+                    }
+                    @include media-breakpoint-down(md){
+                        font-size: 17px;
                     }
                 }
             }
         }
     }
-
-    .pagination{
-        --bs-pagination-focus-box-shadow:0 0 0 0.25rem rgb(0 0 0 / 25%);
-        justify-content: center;
-        .paginate_button{
-            border-color: white;
-            a{
-                color: black;
-            }
-        }
-        .paginate_button.active{
-            a{
-                background-color: black;
-                // border: black;
-                color: white;
-                z-index: 1;
-                border-color: white;
-            }
-        }
-    }
+    
 }
 
 .header-bg{
