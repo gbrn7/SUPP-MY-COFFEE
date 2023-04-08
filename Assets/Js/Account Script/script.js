@@ -167,3 +167,10 @@ cb.addEventListener('click', () => {
   x.classList.toggle('d-none');
   y.classList.toggle('d-none');
 });
+
+const statusField = document.querySelectorAll(".status-field");
+statusField.forEach((e) => {
+  if (e.textContent !== "On Process") {
+    e.innerHTML = `No. Resi : <strong class="d-block">${e.textContent}</strong>`;
+  }
+});

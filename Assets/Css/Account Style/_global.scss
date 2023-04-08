@@ -487,7 +487,7 @@ $dot-color: rgba(0, 0, 0, 0.466);
                                     font-size: 12px;
                                 }
                                 @include media-breakpoint-down(md){
-                                    font-size: 10px;
+                                    font-size: 8px;
                                 }
                             }
                             .btn-2{
@@ -512,69 +512,7 @@ $dot-color: rgba(0, 0, 0, 0.466);
                 }
             
 
-        }      
-        .row-3{
-            .title{
-                @include media-breakpoint-down(lg){
-                    font-size: 12px;
-                }
-            }
-            .status{
-                @include media-breakpoint-down(lg){
-                    font-size: 12px;
-                }
-            }
-                .item{
-                    background-color: #F0F3F7;
-                    border-radius: 25px;
-                    .product-wrapper{
-                        .product{
-                            .title{
-                                font-size: 15px;
-                                letter-spacing: -0.05em;
-                                @include media-breakpoint-down(lg){
-                                    font-size: 12px;
-                                }
-                                @include media-breakpoint-down(md){
-                                    font-size: 10px;
-                                }
-                            }
-                        }
-                        .right-content{
-                            .btn-1{
-                                font-size: 16px;
-                                letter-spacing: -0.05em;
-                                font-weight: map-get($fonts_weights, medium);
-                                @include media-breakpoint-down(lg){
-                                    font-size: 12px;
-                                }
-                                @include media-breakpoint-down(md){
-                                    font-size: 10px;
-                                }
-                            }
-                            .btn-2{
-                                font-size: 16px;
-                                letter-spacing: -0.05em;
-                                font-weight: map-get($fonts_weights, medium);
-                                cursor: pointer;
-                                @include media-breakpoint-down(lg){
-                                    font-size: 12px;
-                                }
-                                @include media-breakpoint-down(md){
-                                    font-size: 10px;
-                                }
-                            }
-                            .btn-2:hover{
-                                background-color: black !important;
-                                color: white !important;
-    
-                            }
-                        }
-                    }
-                }
-            
-
-        }      
+        }           
     }
 }
 
