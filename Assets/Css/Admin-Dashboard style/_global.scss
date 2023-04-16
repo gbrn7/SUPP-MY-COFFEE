@@ -575,7 +575,8 @@ $dot-color: rgba(0, 0, 0, 0.466);
     }
     .table{
         font-family: 'Poppins', sans-serif;
-        
+        table-layout:fixed;
+        word-wrap:break-word;
         tbody{
 
             tr{

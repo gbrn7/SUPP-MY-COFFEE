@@ -463,6 +463,8 @@ body.dark .content .table {
 }
 .content .table {
   font-family: "Poppins", sans-serif;
+  table-layout: fixed;
+  word-wrap: break-word;
 }
 .content .table tbody tr td {
   font-size: 15px;
