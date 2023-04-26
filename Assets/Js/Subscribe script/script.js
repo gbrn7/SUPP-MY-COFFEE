@@ -11,8 +11,35 @@ const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni",
 ];
 const dateWrap = row3.querySelector(".date-wrapper");
 const datecol = row3.querySelector(".date-col");
+const paket = document.querySelector(".paket");
+const alamat = document.querySelector(".alamat");
 iteminit();
 dateInit();
+
+paket.addEventListener("change", ()=>{
+  if(alamat.value != '' && paket.value != 'x'){
+    btnCheckout.classList.remove('disabled');
+  } else if( paket.value == 'x' && !btnCheckout.classList.contains('disabled')){
+    btnCheckout.classList.add('disabled');
+  }
+});
+
+alamat.addEventListener("keyup", (event)=>{
+  
+
+  if(alamat.value && paket.value != 'x'){
+    btnCheckout.classList.remove('disabled');
+  } else if( paket.value == 'x' && !btnCheckout.classList.contains('disabled')){
+    btnCheckout.classList.add('disabled');
+  }
+
+  if (event.key === "Backspace" || event.key === "Delete" ){
+    if(alamat.value == ''){
+      btnCheckout.classList.add('disabled');
+    }
+  }
+});
+
 
 btnConfirm.addEventListener("click", () => {
   datecol.classList.remove("d-none");
@@ -20,7 +47,7 @@ btnConfirm.addEventListener("click", () => {
     dateWrap.innerHTML = '';
   }
   confirmInit();
-  if (btnCheckout.classList.contains("disabled")) {
+  if (btnCheckout.classList.contains("disabled") && alamat.value != '' && paket.value != 'x') {
     btnCheckout.classList.remove("disabled");
   }
 });
