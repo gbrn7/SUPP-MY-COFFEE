@@ -419,6 +419,9 @@ font-size: 16px;
     left: 0;
     right: auto;
   }
+  .bg{
+    background: none;
+  }
 }
 @media (max-width: 991.98px) {
   .navbar .container .toggle .right-content .dropdown .menu {
@@ -432,6 +435,7 @@ font-size: 16px;
   .navbar .container .toggle .right-content .dropdown .menu .title {
     font-size: 13px;
   }
+
 }
 .navbar .container .toggle .right-content .dropdown .menu li {
   padding: 0.7em 0.5em;
