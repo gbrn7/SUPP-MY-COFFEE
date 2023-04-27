@@ -161,14 +161,14 @@ btnConfirm.addEventListener("click", () => {
 radioBtn.forEach((e) => {
   e.addEventListener("click", () => {
     if (e.classList.contains("subs")) {
-      if (row2.classList.contains("d-none") && row3.classList.contains("d-none")) {
+      if (row2.classList.contains("d-none") && row3.classList.contains("d-none" )) {
         row2.classList.remove("d-none");
         row3.classList.remove("d-none");
         btnCheckout.classList.add("disabled")
 
       }
     } else {
-      if (!row2.classList.contains("d-none") && !row3.classList.contains("d-none")) {
+      if (!row2.classList.contains("d-none") && !row3.classList.contains("d-none") && alamat.value != '' && paket.value != 'x') {
         row2.classList.add("d-none");
         row3.classList.add("d-none");
         btnCheckout.classList.remove("disabled")
