@@ -14,7 +14,7 @@ const datecol = row3.querySelector(".date-col");
 const paket = document.querySelector(".paket");
 const alamat = document.querySelector(".alamat");
 const subsInput = document.querySelector('.subs-input');
-console.log(subsInput.value);
+
 iteminit();
 dateInit();
 
@@ -207,6 +207,10 @@ function confirmInit() {
 
   for (let i = 0; i < range; i++) {
     var newDate = new Date(date.setMonth(date.getMonth() + 1));
+
+    // let test = new Date(2022, 4, 19, 0, 0);
+    console.log(newDate);
+
     if (i == 0) {
       var x = `${date.getDate()} ${monthNames[date.getMonth()]} ${date.getFullYear()}`;
       item = elementFromHtml(`<p class="mb-1">${x}</p>`);
