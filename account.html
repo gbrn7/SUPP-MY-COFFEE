@@ -161,13 +161,14 @@
 
     <!-- Profile Start -->
     <section class="profile" id="profile">
+      <form action="#" method="post" class="update-form">
       <div class="container profile-wrapper d-flex flex-column gap-4">
         <div class="row row-1 justify-content-center">
           <div class="col-lg-6 col-12">
             <div class="title-wrapper">
-              <p class="name m-0 mb-2">Name</p>
+              <p class="name m-0 mb-2">Nama</p>
             </div>
-            <input type="text" disabled value="Isyana Sarasvati" name="name" id="name" class="col-12">
+            <input type="text" disabled value="Isyana Sarasvati" name="nama" id="name" class="col-12 profile-form">
           </div>
         </div>
         <div class="row row-2 justify-content-center">
@@ -175,37 +176,47 @@
             <div class="title-wrapper">
               <p class="name m-0 mb-2">Email</p>
             </div>
-            <input type="text" disabled value="IsyanaSarasvati@gmail.com" name="email" id="email" class="col-12">
+            <input type="text" disabled value="IsyanaSarasvati@gmail.com" name="email" id="email" class="col-12 ">
           </div>
         </div>
         <div class="row row-3 justify-content-center">
           <div class="col-lg-6 col-12">
             <div class="title-wrapper">
-              <p class="name m-0 mb-2">Address</p>
+              <p class="name m-0 mb-2">Alamat</p>
             </div>
-            <input type="text" disabled value="Jl Merpati Putih No 7, Jakarta Selatan" name="address" id="address" class="col-12">
+            <input type="text" disabled value="Jl Merpati Putih No 7, Jakarta Selatan" name="alamat" id="alamat" class="col-12 profile-form">
           </div>
         </div>
         <div class="row row-4 justify-content-center">
           <div class="col-lg-6 col-12">
             <div class="title-wrapper">
-              <p class="name m-0 mb-2">Phone</p>
+              <p class="name m-0 mb-2">No Handphone</p>
             </div>
-            <input type="text" disabled value="089632547456" name="phone" id="phone" class="col-12">
+            <input type="text" disabled value="089632547456" name="noHp" id="noHp" class="col-12 profile-form">
           </div>
         </div>
         <div class="row row-5 justify-content-center">
           <div class="col-lg-6 col-12">
-            <a href="#" class="text-decoration-none text-black">
-            <div class="row justify-content-end">
-                <div class="btn-wrapper text-center p-2 col-3 ">
-                  <p class="name m-0">Logout</p>
-                </div>
+            <div class="row justify-content-between default-wrapper">
+              <a href="#" class="text-decoration-none btn-wrapper btn-update text-center text-black p-2 col-3">
+                  <p class="update-text m-0">Update</p>
+              </a>
+              <a href="#" class="text-decoration-none text-black btn-wrapper text-center p-2 col-3">
+                  <p class="logout m-0">Logout</p>
+              </a>
+            </div>
+            <div class="row justify-content-between update-wrapper d-none">
+              <button type="submit" class="text-decoration-none btn-wrapper btn-update btn-simpan text-center text-black p-2 col-3">
+                  <p class="update-text m-0">Simpan</p>
+              </button>
+              <div  class="text-decoration-none text-black btn-wrapper btn-batal text-center p-2 col-3">
+                  <p class="logout m-0">Batal</p>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
+    </form>
     </section>
     <!-- Profile End -->
 
@@ -353,6 +364,8 @@
   <!-- Main Js -->
   <script src="Assets/Js/Account Script/script.js"></script>
 
+  <!-- Sweet Alert -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 
 </html>
